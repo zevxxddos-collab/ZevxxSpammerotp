@@ -22,7 +22,7 @@
 
 # 🔥 ZEVXX SPAMMER OTP - v1.0
 
-> **GACOR EDITION** — 58+ Platform WhatsApp OTP Spammer  
+> **GACOR EDITION** — 40+ Platform WhatsApp OTP Spammer  
 > *by ZEVXX | No Filter | No Sensor | No Limit*
 
 <p align="center">
@@ -33,7 +33,7 @@
 
 ## 🚀 Deskripsi
 
-**ZEVXX SPAMMER OTP v3.2** adalah tools canggih untuk mengirimkan **OTP (One Time Password)** via **WhatsApp** ke nomor target secara massal melalui **40+ platform Indonesia**. Dibangun untuk kebutuhan **testing keamanan** dan **edukasi** tentang celah kerentanan sistem OTP.
+**ZEVXX SPAMMER OTP v1.0** adalah tools canggih untuk mengirimkan **OTP (One Time Password)** via **WhatsApp** ke nomor target secara massal melalui **40+ platform Indonesia**. Dibangun untuk kebutuhan **testing keamanan** dan **edukasi** tentang celah kerentanan sistem OTP.
 
 > ⚠️ **⚠️ PERINGATAN PENTING ⚠️**  
 > Tools ini **HANYA** untuk tujuan edukasi dan penetration testing yang sah.  
@@ -42,7 +42,7 @@
 
 ---
 
-## 🔥 Fitur Unggulan v3.2
+## 🔥 Fitur Unggulan v1.0
 
 | ⚡ Fitur | 📝 Keterangan |
 |----------|---------------|
@@ -138,12 +138,12 @@ pkg install git -y
 
 **4. Clone repository**
 ```bash
-git clone  https://github.com/zevxxddos-collab/ZevxxSpammerotp
+git clone https://github.com/zevxxddos-collab/ZevxxSpammerotp
 ```
 
 **5. Masuk ke folder**
 ```bash
-cd ZevxxzSpammerotp
+cd ZevxxSpammerotp
 ```
 
 **6. Install dependencies**
