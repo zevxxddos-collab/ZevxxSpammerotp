@@ -21,7 +21,7 @@
 
 ---
 
-# 🔥 ZEVXX SPAMMER OTP - v1.0
+# 🔥 ZEVXX SPAMMER OTP - v3.2
 
 > **GACOR EDITION** — 58+ Platform WhatsApp OTP Spammer  
 > *by ZEVXX | No Filter | No Sensor | No Limit*
@@ -34,7 +34,7 @@
 
 ## 🚀 Deskripsi
 
-**ZEVXX SPAMMER OTP v1.0** adalah tools canggih untuk mengirimkan **OTP (One Time Password)** via **WhatsApp** ke nomor target secara massal melalui **58+ platform Indonesia**. Dibangun untuk kebutuhan **testing keamanan** dan **edukasi** tentang celah kerentanan sistem OTP.
+**ZEVXX SPAMMER OTP v3.2** adalah tools canggih untuk mengirimkan **OTP (One Time Password)** via **WhatsApp** ke nomor target secara massal melalui **58+ platform Indonesia**. Dibangun untuk kebutuhan **testing keamanan** dan **edukasi** tentang celah kerentanan sistem OTP.
 
 > ⚠️ **⚠️ PERINGATAN PENTING ⚠️**  
 > Tools ini **HANYA** untuk tujuan edukasi dan penetration testing yang sah.  
@@ -43,7 +43,7 @@
 
 ---
 
-## 🔥 Fitur Unggulan v1.0
+## 🔥 Fitur Unggulan v3.2
 
 | ⚡ Fitur | 📝 Keterangan |
 |----------|---------------|
@@ -293,5 +293,3 @@ HANYA UNTUK TUJUAN PENDIDIKAN DAN PENETRATION TESTING YANG SAH!
   </a>
 </p>
 ```
-
----
