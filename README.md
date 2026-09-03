@@ -138,12 +138,12 @@ pkg install git -y
 
 **4. Clone repository**
 ```bash
-git clone https://github.com/ZEVXX/otp-spammer
+git clone  https://github.com/zevxxddos-collab/ZevxxSpammerotp
 ```
 
 **5. Masuk ke folder**
 ```bash
-cd otp-spammer
+cd ZevxxzSpammerotp
 ```
 
 **6. Install dependencies**
