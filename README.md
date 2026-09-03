@@ -153,7 +153,7 @@ pip install -r requirements.txt
 
 **7. Jalankan tools**
 ```bash
-python main.py
+python otpzevxxspam.py
 ```
 
 ---
